@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+        
+<struts>
+
+<!-- 
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <include file="example.xml"/>
+    <package name="default" namespace="/" extends="struts-default">
+        <default-action-ref name="index" />
+        <action name="index">
+            <result type="redirectAction">
+                <param name="actionName">HelloWorld</param>
+                <param name="namespace">/example</param>
+            </result>
+        </action>
+    </package>
+	 -->
+
+ <constant name="struts.devMode" value="true" />
+ 
+ <!--练习一：helloworld struts2  -->
+    <package name="default" namespace="/" extends="struts-default">
+        <action name="hello" class="com.wings.struts.HelloWorld">
+        <result name="success">/hello.jsp</result>
+        </action>
+    </package>
+    
+  <!--练习二：自定义包  -->
+     <package name="space" extends="struts-default" namespace="">
+        <action name="space">
+            <result>/Namespace.jsp</result>
+        </action>
+    </package>
+    
+ <!--练习三：自定义action 对应 com/wings/action  -->
+    <package name="mAction" extends="struts-default" namespace="/mAction">
+    
+        <action name="action01" class="com.wings.acion.CustomAction01">
+            <result name="success">/action.jsp</result>
+        </action>
+        <!--,利用此action访问失败，原因未知  -->
+        <action name="action02" class="com.wings.acion.CustomAction02">
+            <result name="success">/action.jsp</result>
+        </action>
+        <action name="action03" class="com.wings.acion.CustomAction03">
+            <result name="success">/action.jsp</result>
+        </action>
+    </package>
+    
+ <!--练习四：自定义action中的方法  -->
+ 	<constant name="struts.enable.DynamicMethodInvocation" value="true" /> 
+    <package name="method" extends="struts-default" namespace="/method">
+        <action name="method01" class="com.wings.action.method.ActionMethod" method="add">
+            <result>/actionmethod.jsp</result>
+        </action>
+        <!--似乎可以不用配置属性method 而直接在地址栏后加上！add 来访问方法，但是测试失败，原因未知  -->
+        <action name="method02" class="com.wings.action.method.ActionMethod02">
+            <result>/actionmethod.jsp</result>
+        </action>
+        <!--action method 与通配符 -->
+        <action name="Student*" class="com.wings.action.method.StudentAction" method="{1}">
+            <result>/Student{1}_success.jsp</result>
+        </action>
+        <action name="*_*" class="com.wings.action.method.{1}Action" method="{2}">
+            <result>/{1}_{2}_success.jsp</result>
+            <!-- {0}_success.jsp -->
+        </action>
+    </package>
+    
+    <!--练习五： action的参数传递 -->
+    <package name="parameter" extends="struts-default" namespace="/parameter">
+        <action name="parameter" class="com.wings.parameter.UserAction">
+            <result>/parameter.jsp</result>
+        </action>
+    </package>
+    
+</struts>
