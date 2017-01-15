@@ -3,11 +3,8 @@ package com.dzsoft.smart.testcase;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.RandomAccessFile;
 import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import com.android.uiautomator.core.UiDevice;
 import com.android.uiautomator.core.UiObject;
@@ -234,6 +231,28 @@ public class TestUtil {
     		}
     	}
     	return s;
+    }
+    
+    /**
+     * 创建指定大小空文件
+     * */
+    public void creatFile(String path,String fileName,int length){
+		RandomAccessFile raf = null;
+		try {
+			File f=new File(path+"\\"+fileName);
+			raf = new RandomAccessFile(f, "rw");
+			raf.setLength(length);
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			if ( raf != null ) {
+				try {
+					raf.close();
+				} catch (Exception e2) {
+					e2.printStackTrace();
+				}
+			}
+		}
     }
     
 }
