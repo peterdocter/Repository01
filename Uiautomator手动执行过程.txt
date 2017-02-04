@@ -1,0 +1,14 @@
+1.android.bat create uitest-project -n MessageTestCase -t 1 -p C:\\workspace\\projectname
+(成功执行后会在工程所在目录生成build.xml)
+
+2.下载ant，并进入build.xml目录下,执行命令
+ant路径\bin\ant build
+（成功后会在工程bin目录下jar包）
+
+3.push jar包至手机
+adb push <path_to_output_jar> /data/local/tmp
+
+4.运行测试
+adb shell uiautomator runtest MessageTestCase.jar -c 包名.类名
+
+（注意，测试类必须继承UiAutomatorTestCase，测试方法必须以testk开头）
