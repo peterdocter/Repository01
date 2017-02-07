@@ -1,0 +1,9 @@
+方法有三种： 
+1.选择工程，在菜单Project->Genarate Javadoc 
+2.选择工程，鼠标右键菜单Export ，选择Java 下面的Javadoc ，点”next” 按钮 
+3.选择工程，在菜单File->Export ，选择Java 下面的Javadoc ，点”next” 按钮 
+然后，可以选择生成到Javadoc 文档中的内容( 一般选public 或protected) ，选存放目录( 默认即可) ，next下一步 ,此页全默认即可，再next 下一步 。 
+   此时如果项目采用的是 UTF － 8 的编码 一定要在这一页的Extra Javadoc options 中加 -encoding UTF-8 -charset UTF-8 。否则生成的网页中文注释都是乱码。 点 Finish 完成, 
+
+在工程的doc 目录中，就有Javadoc 文档了。
+文章转载自：http://harrysmithliu.blog.163.com/blog/static/2123811942013317111235418/
