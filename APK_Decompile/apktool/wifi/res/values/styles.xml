@@ -1,0 +1,1083 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BL" />
+    <style name="BL.TextAppearance.Button" parent="@style/BL.TextAppearance">
+        <item name="android:textSize">@dimen/framework_text_font_size_button</item>
+        <item name="android:textColor">@color/framework_button_text</item>
+    </style>
+    <style name="BL.Widget.Button" parent="@*android:style/Widget.Button">
+        <item name="android:textAppearance">@style/BL.TextAppearance.Button</item>
+        <item name="android:textSize">@dimen/framework_text_font_size_button</item>
+        <item name="android:textColor">@color/framework_button_text</item>
+        <item name="android:background">@drawable/framework_btn_bg_single</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="BL.Widget.Button.Rect" parent="@style/BL.Widget.Button">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:background">@drawable/framework_btn_bg_single</item>
+    </style>
+    <style name="BL.Widget.ListView" parent="@*android:style/Widget.ListView.White">
+        <item name="android:fadingEdge">none</item>
+        <item name="android:listSelector">@drawable/framework_list_view_item_bg</item>
+        <item name="android:cacheColorHint">@null</item>
+        <item name="android:divider">@color/framework_list_view_divider_color</item>
+        <item name="android:dividerHeight">1.0px</item>
+    </style>
+    <style name="BL.Widget.ListView.NoDivider" parent="@*android:style/Widget.ListView.White">
+        <item name="android:fadingEdge">none</item>
+        <item name="android:listSelector">@*android:color/transparent</item>
+        <item name="android:cacheColorHint">@*android:color/transparent</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0.0px</item>
+    </style>
+    <style name="BL.Widget.ListView.Item" parent="@style/BL.Widget.ListView">
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">@drawable/framework_list_view_item_bg</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+    <style name="BL.Widget.ListView.Item.SingleLine" parent="@style/BL.Widget.ListView.Item">
+        <item name="android:textAppearance">@style/BL.TextAppearance.List</item>
+        <item name="android:paddingLeft">@dimen/framework_list_view_padding_horizontal</item>
+        <item name="android:paddingRight">@dimen/framework_list_view_padding_horizontal</item>
+        <item name="android:layout_height">@dimen/framework_list_view_single_line_height</item>
+        <item name="android:minHeight">@dimen/framework_list_view_single_line_height</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="BL.TextAppearance.Title" parent="@style/BL.TextAppearance">
+        <item name="android:textSize">@dimen/framework_text_font_size_title</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+    <style name="BL.TextAppearance" parent="@*android:style/TextAppearance">
+        <item name="android:textSize">@dimen/framework_text_font_size_primary</item>
+    </style>
+    <style name="BL.TextAppearance.Inverse" parent="@*android:style/TextAppearance.Inverse">
+        <item name="android:textSize">@dimen/framework_text_font_size_primary</item>
+    </style>
+    <style name="BL.TextAppearance.Large" parent="@*android:style/TextAppearance.Large">
+        <item name="android:textSize">@dimen/framework_text_font_size_large</item>
+    </style>
+    <style name="BL.TextAppearance.Large.Inverse" parent="@*android:style/TextAppearance.Large.Inverse">
+        <item name="android:textSize">@dimen/framework_text_font_size_large</item>
+    </style>
+    <style name="BL.TextAppearance.Medium" parent="@*android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/framework_text_font_size_medium</item>
+    </style>
+    <style name="BL.TextAppearance.Medium.Inverse" parent="@*android:style/TextAppearance.Medium.Inverse">
+        <item name="android:textSize">@dimen/framework_text_font_size_medium</item>
+    </style>
+    <style name="BL.TextAppearance.Small" parent="@*android:style/TextAppearance.Small">
+        <item name="android:textSize">@dimen/framework_text_font_size_small</item>
+    </style>
+    <style name="BL.TextAppearance.Small.Inverse" parent="@*android:style/TextAppearance.Small.Inverse">
+        <item name="android:textSize">@dimen/framework_text_font_size_small</item>
+    </style>
+    <style name="BL.TextAppearance.Default" parent="@style/BL.TextAppearance">
+        <item name="android:textSize">@dimen/framework_text_font_size_title</item>
+    </style>
+    <style name="BL.TextAppearance.TitleDefault" parent="@style/BL.TextAppearance">
+        <item name="android:textSize">@dimen/framework_text_font_size_title</item>
+    </style>
+    <style name="BL.TextAppearance.TitleDefault.Bold" parent="@style/BL.TextAppearance.TitleDefault">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="BL.TextAppearance.Title.Large" parent="@style/BL.TextAppearance.Title">
+        <item name="android:textSize">@dimen/framework_text_font_size_main_page_title</item>
+    </style>
+    <style name="BL.TextAppearance.Title.Large.Secondary" parent="@style/BL.TextAppearance.Title.Large">
+        <item name="android:textSize">@dimen/framework_text_font_size_small</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="BL.TextAppearance.Title.Medium" parent="@style/BL.TextAppearance.Title">
+        <item name="android:textSize">@dimen/framework_text_font_size_title_bar_medium</item>
+    </style>
+    <style name="BL.TextAppearance.Title.Medium.Secondary" parent="@style/BL.TextAppearance.Title.Medium">
+        <item name="android:textSize">@dimen/framework_text_font_size_title_bar_secondary_medium</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="BL.TextAppearance.EditMode" parent="@style/BL.TextAppearance">
+        <item name="android:textSize">@dimen/framework_text_font_size_primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="BL.TextAppearance.EditMode.Button" parent="@style/BL.TextAppearance.EditMode">
+        <item name="android:textSize">@dimen/framework_text_font_size_edit_mode_button</item>
+    </style>
+    <style name="BL.TextAppearance.TabIndicator" parent="@style/BL.TextAppearance">
+        <item name="android:textSize">@dimen/framework_text_font_size_tab</item>
+        <item name="android:textColor">@color/framework_tab_text</item>
+    </style>
+    <style name="BL.TextAppearance.BottomBarIcon" parent="@style/BL.TextAppearance">
+        <item name="android:textSize">@dimen/framework_text_font_size_memo</item>
+        <item name="android:textColor">@color/framework_bottom_bar_text</item>
+    </style>
+    <style name="BL.TextAppearance.EditText" parent="@style/BL.TextAppearance">
+        <item name="android:textSize">@dimen/framework_text_font_size_textedit</item>
+        <item name="android:textColor">?android:editTextColor</item>
+    </style>
+    <style name="BL.TextAppearance.Button.Warn" parent="@style/BL.TextAppearance.Button">
+        <item name="android:textColor">@color/framework_button_warn_text</item>
+    </style>
+    <style name="BL.TextAppearance.PreferenceCategory" parent="@style/BL.TextAppearance">
+        <item name="android:textSize">@dimen/framework_text_font_size_preference_category</item>
+        <item name="android:textColor">@color/framework_preference_category_text_color</item>
+    </style>
+    <style name="BL.TextAppearance.PreferenceList" parent="@style/BL.TextAppearance">
+        <item name="android:textSize">@dimen/framework_text_font_size_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/framework_preference_primary_text</item>
+    </style>
+    <style name="BL.TextAppearance.List" parent="@style/BL.TextAppearance">
+        <item name="android:textSize">@dimen/framework_text_font_size_list_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/framework_list_primary_text</item>
+    </style>
+    <style name="BL.TextAppearance.List.Primary" parent="@style/BL.TextAppearance.List">
+        <item name="android:textSize">@dimen/framework_text_font_size_list_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/framework_list_primary_text</item>
+    </style>
+    <style name="BL.TextAppearance.List.Secondary" parent="@style/BL.TextAppearance.List">
+        <item name="android:textSize">@dimen/framework_text_font_size_list_secondary</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/framework_list_secondary_text</item>
+    </style>
+    <style name="BL.TextAppearance.List.Secondary.Preference" parent="@style/BL.TextAppearance.List.Secondary">
+        <item name="android:textColor">@color/framework_preference_secondary_text</item>
+    </style>
+    <style name="BL.TextAppearance.MenuList" parent="@style/BL.TextAppearance">
+        <item name="android:textSize">@dimen/framework_text_font_size_list_primary</item>
+        <item name="android:textColor">@color/framework_list_primary_text</item>
+    </style>
+    <style name="BL.TextAppearance.DialogTitle" parent="@style/BL.TextAppearance">
+        <item name="android:textSize">@dimen/framework_text_font_size_main</item>
+        <item name="android:textColor">@color/framework_primary_color</item>
+    </style>
+    <style name="BL.TextAppearance.ProgressDialogMessage" parent="@style/BL.TextAppearance">
+        <item name="android:textSize">@dimen/framework_text_font_size_button</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="BL.TextAppearance.Label" parent="@style/BL.TextAppearance">
+        <item name="android:textSize">@dimen/framework_text_font_size_preference_category</item>
+        <item name="android:textColor">@color/framework_secondary_text</item>
+    </style>
+    <style name="BL.TextAppearance.ExpandableListView" parent="@style/BL.TextAppearance" />
+    <style name="BL.TextAppearance.ExpandableListView.GroupItem" parent="@style/BL.TextAppearance.ExpandableListView">
+        <item name="android:textSize">@dimen/framework_text_font_size_list_primary</item>
+        <item name="android:textColor">@color/framework_bottom_bar_text</item>
+    </style>
+    <style name="BL.Widget" parent="@style/BL" />
+    <style name="BL.Widget.Title" parent="@style/BL.Widget">
+        <item name="android:textAppearance">@style/BL.TextAppearance.Title</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/framework_title_bar_bg</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="BL.Widget.EditText" parent="@*android:style/Widget.EditText">
+        <item name="android:textAppearance">@style/BL.TextAppearance.EditText</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">@drawable/framework_edit_text_bg</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textCursorDrawable">@drawable/framework_text_cursor_holo</item>
+    </style>
+    <style name="BL.Widget.EditText.Search" parent="@style/BL.Widget.EditText">
+        <item name="android:background">@drawable/framework_edit_text_search_bg</item>
+        <item name="android:drawableRight">@drawable/framework_edit_text_search_clear_btn</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:textCursorDrawable">@drawable/framework_text_cursor_holo</item>
+    </style>
+    <style name="BL.Widget.ListView.DropDown" parent="@style/BL.Widget.ListView" />
+    <style name="BL.Widget.ListView.Item.TrebleLine" parent="@style/BL.Widget.ListView.Item">
+        <item name="android:textAppearance">@style/BL.TextAppearance.List.Primary</item>
+        <item name="android:paddingLeft">@dimen/framework_list_view_padding_horizontal</item>
+        <item name="android:paddingRight">@dimen/framework_list_view_padding_horizontal</item>
+        <item name="android:layout_height">@dimen/framework_list_view_treble_line_height</item>
+        <item name="android:minHeight">@dimen/framework_list_view_treble_line_height</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="BL.Widget.CompoundButton" parent="@*android:style/Widget.CompoundButton" />
+    <style name="BL.Widget.CompoundButton.CheckBox" parent="@*android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:textSize">@dimen/framework_text_font_size_primary</item>
+        <item name="android:textColor">@color/framework_black_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="BL.Widget.CompoundButton.RadioButton" parent="@*android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:textSize">@dimen/framework_text_font_size_primary</item>
+        <item name="android:textColor">@color/framework_list_primary_text</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">0.0dip</item>
+    </style>
+    <style name="BL.Widget.Button.Single" parent="@style/BL.Widget.Button">
+        <item name="android:background">@drawable/framework_btn_bg_single</item>
+    </style>
+    <style name="BL.Widget.Button.First" parent="@style/BL.Widget.Button">
+        <item name="android:background">@drawable/framework_btn_bg_first</item>
+    </style>
+    <style name="BL.Widget.Button.Last" parent="@style/BL.Widget.Button">
+        <item name="android:background">@drawable/framework_btn_bg_last</item>
+    </style>
+    <style name="BL.Widget.Button.NegativeWarn" parent="@style/BL.Widget.Button">
+        <item name="android:textAppearance">@style/BL.TextAppearance.Button.Warn</item>
+        <item name="android:textColor">@color/framework_button_warn_text</item>
+        <item name="android:background">@drawable/framework_btn_bg_negative_warn_single</item>
+    </style>
+    <style name="BL.Widget.Button.NegativeWarn.Single" parent="@style/BL.Widget.Button.NegativeWarn">
+        <item name="android:minHeight">@dimen/framework_alert_dialog_button_bar_height</item>
+    </style>
+    <style name="BL.Widget.Button.PositiveWarn" parent="@style/BL.Widget.Button">
+        <item name="android:textAppearance">@style/BL.TextAppearance.Button.Warn</item>
+        <item name="android:textColor">@color/framework_button_warn_text</item>
+        <item name="android:background">@drawable/framework_btn_bg_positive_warn_single</item>
+    </style>
+    <style name="BL.Widget.Button.PositiveWarn.Single" parent="@style/BL.Widget.Button.PositiveWarn">
+        <item name="android:minHeight">@dimen/framework_alert_dialog_button_bar_height</item>
+    </style>
+    <style name="BL.Widget.Button.Dialog" parent="@style/BL.Widget.Button">
+        <item name="android:textSize">@dimen/framework_text_font_size_main</item>
+        <item name="android:textColor">@color/framework_desciption_color</item>
+        <item name="android:background">@drawable/framework_dialog_btn_bg</item>
+        <item name="android:paddingLeft">7.0dip</item>
+        <item name="android:paddingTop">7.0dip</item>
+        <item name="android:paddingRight">7.0dip</item>
+        <item name="android:paddingBottom">7.0dip</item>
+        <item name="android:minWidth">60.0dip</item>
+    </style>
+    <style name="BL.Widget.Button.Dialog.Default" parent="@style/BL.Widget.Button.Dialog">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/framework_button_text</item>
+    </style>
+    <style name="BL.Widget.TextView" parent="@*android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/framework_text_font_size_primary</item>
+        <item name="android:textCursorDrawable">@drawable/framework_text_cursor_holo</item>
+    </style>
+    <style name="BL.Widget.TextView.SpinnerItem" parent="@*android:style/Widget.TextView.SpinnerItem">
+        <item name="android:textSize">@dimen/framework_text_font_size_primary</item>
+        <item name="android:textColor">@color/framework_button_text</item>
+    </style>
+    <style name="BL.Widget.TextView.ListSeparator" parent="@style/BL.Widget.TextView">
+        <item name="android:textAppearance">@style/BL.TextAppearance.Label</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/framework_preference_category_background</item>
+        <item name="android:paddingLeft">@dimen/framework_list_view_separator_padding_left</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="BL.Widget.DropDownItem" parent="@style/BL.Widget">
+        <item name="android:textAppearance">@style/BL.TextAppearance.MenuList</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/framework_dialog_list_item_bg</item>
+        <item name="android:paddingLeft">@dimen/framework_list_view_padding_horizontal</item>
+        <item name="android:paddingRight">@dimen/framework_list_view_padding_horizontal</item>
+    </style>
+    <style name="BL.Widget.DropDownItem.Spinner" parent="@style/BL.Widget.DropDownItem">
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:checkMark">?android:listChoiceIndicatorSingle</item>
+    </style>
+    <style name="BL.Widget.PopupWindow" parent="@*android:style/Widget.PopupWindow">
+        <item name="android:popupBackground">@color/framework_dialog_bg_color</item>
+    </style>
+    <style name="BL.Widget.ListPopupWindow" parent="@style/BL.Widget">
+        <item name="android:dropDownSelector">@null</item>
+        <item name="android:popupBackground">@drawable/framework_list_popup_window_bg</item>
+        <item name="android:dropDownWidth">fill_parent</item>
+        <item name="android:dropDownHorizontalOffset">0.0dip</item>
+        <item name="android:dropDownVerticalOffset">0.0dip</item>
+    </style>
+    <style name="BL.Widget.AutoCompleteTextView" parent="@style/BL.Widget.EditText">
+        <item name="android:completionHintView">@layout/framework_simple_dropdown_hint</item>
+        <item name="android:completionThreshold">2</item>
+        <item name="android:dropDownSelector">@*android:drawable/list_selector_background</item>
+        <item name="android:popupBackground">@color/framework_window_background</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+        <item name="android:dropDownHorizontalOffset">0.0dip</item>
+        <item name="android:dropDownVerticalOffset">0.0dip</item>
+    </style>
+    <style name="BL.Widget.ActionBar.Solid.Settings" parent="@*android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:background">@drawable/framework_title_bar_bg</item>
+        <item name="android:displayOptions">homeAsUp|showTitle</item>
+        <item name="android:titleTextStyle">@style/BL.TextAppearance.Title</item>
+    </style>
+    <style name="BL.Preference" parent="@style/BL">
+        <item name="android:layout">@layout/framework_preference_arrow</item>
+    </style>
+    <style name="BL.Preference.CheckBoxPreference" parent="@style/BL.Preference">
+        <item name="android:layout">@layout/framework_preference</item>
+        <item name="android:widgetLayout">@layout/framework_preference_widget_checkbox</item>
+    </style>
+    <style name="BL.Preference.SwitchPreference" parent="@style/BL.Preference">
+        <item name="android:layout">@layout/framework_preference</item>
+        <item name="android:widgetLayout">@layout/framework_preference_widget_switch</item>
+        <item name="android:switchTextOn">on</item>
+        <item name="android:switchTextOff">off</item>
+    </style>
+    <style name="BL.Preference.PreferenceScreen" parent="@style/BL.Preference" />
+    <style name="BL.Preference.DialogPreference" parent="@style/BL.Preference">
+        <item name="android:layout">@layout/framework_preference_value</item>
+        <item name="android:positiveButtonText">@*android:string/ok</item>
+        <item name="android:negativeButtonText">@*android:string/cancel</item>
+    </style>
+    <style name="BL.Preference.DialogPreference.YesNoPreference" parent="@style/BL.Preference.DialogPreference">
+        <item name="android:positiveButtonText">@*android:string/yes</item>
+        <item name="android:negativeButtonText">@*android:string/no</item>
+    </style>
+    <style name="BL.Preference.DialogPreference.EditTextPreference" parent="@style/BL.Preference.DialogPreference">
+        <item name="android:dialogLayout">@layout/framework_preference_dialog_edittext</item>
+    </style>
+    <style name="BL.Preference.RingtonePreference" parent="@style/BL.Preference">
+        <item name="android:layout">@layout/framework_preference_value</item>
+        <item name="android:ringtoneType">ringtone</item>
+        <item name="android:showDefault">true</item>
+        <item name="android:showSilent">true</item>
+    </style>
+    <style name="BL.Preference.Information" parent="@style/BL.Preference">
+        <item name="android:enabled">false</item>
+        <item name="android:layout">@layout/framework_preference_information</item>
+        <item name="android:shouldDisableView">false</item>
+    </style>
+    <style name="BL.Preference.Category" parent="@style/BL.Preference">
+        <item name="android:layout">@layout/framework_preference_category</item>
+        <item name="android:selectable">false</item>
+        <item name="android:shouldDisableView">false</item>
+    </style>
+    <style name="BL.Widget.DialogTitle" parent="@style/BL.Widget">
+        <item name="android:textAppearance">@style/BL.TextAppearance.DialogTitle</item>
+        <item name="android:textSize">@dimen/framework_text_font_size_main</item>
+        <item name="android:gravity">left</item>
+    </style>
+    <style name="BL.Widget.ButtonBar" parent="@*android:style/Holo.ButtonBar">
+        <item name="android:divider">@null</item>
+        <item name="android:dividerPadding">0.0dip</item>
+    </style>
+    <style name="BL.Widget.PopupMenu" parent="@*android:style/Widget.PopupMenu">
+        <item name="android:windowAnimationStyle">@style/BL.Animation.Dialog</item>
+        <item name="android:dropDownSelector">@drawable/framework_dialog_list_item_bg</item>
+        <item name="android:popupBackground">@color/framework_dialog_bg_color</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+        <item name="android:dropDownHorizontalOffset">0.0dip</item>
+        <item name="android:dropDownVerticalOffset">-10.0dip</item>
+    </style>
+    <style name="BL.AlertDialog" parent="@style/BL">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowAnimationStyle">@style/BL.Animation.Dialog</item>
+        <item name="android:fullDark">@*android:color/transparent</item>
+        <item name="android:topDark">@*android:color/transparent</item>
+        <item name="android:centerDark">@*android:color/transparent</item>
+        <item name="android:bottomDark">@*android:color/transparent</item>
+        <item name="android:fullBright">@*android:color/transparent</item>
+        <item name="android:topBright">@*android:color/transparent</item>
+        <item name="android:centerBright">@*android:color/transparent</item>
+        <item name="android:bottomBright">@*android:color/transparent</item>
+        <item name="android:bottomMedium">@*android:color/transparent</item>
+        <item name="android:centerMedium">@*android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:windowShowWallpaper">false</item>
+        <item name="android:windowMinWidthMajor">100.0%</item>
+        <item name="android:windowMinWidthMinor">100.0%</item>
+    </style>
+    <style name="BL.AlertDialog.GlobalAction" parent="@style/BL.AlertDialog" />
+    <style name="BL.Animation" parent="@style/BL" />
+    <style name="BL.Animation.Activity" parent="@style/BL.Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/framework_activity_open_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/framework_activity_open_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/framework_activity_close_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/framework_activity_close_exit</item>
+    </style>
+    <style name="BL.Animation.Activity.Slide" parent="@style/BL.Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/framework_slide_right_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/framework_slide_left_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/framework_slide_left_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/framework_slide_right_exit</item>
+    </style>
+    <style name="BL.Animation.Dialog" parent="@style/BL.Animation">
+        <item name="android:windowEnterAnimation">@anim/framework_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/framework_dialog_exit</item>
+    </style>
+    <style name="BL.Animation.Menu" parent="@style/BL.Animation">
+        <item name="android:windowEnterAnimation">@anim/framework_menu_enter</item>
+        <item name="android:windowExitAnimation">@anim/framework_menu_exit</item>
+    </style>
+    <style name="BL.Animation.ZoomButtons" parent="@style/BL.Animation">
+        <item name="android:windowEnterAnimation">@*android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@*android:anim/fade_out</item>
+    </style>
+    <style name="BL.Animation.VolumePanel" parent="@style/BL.Animation">
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@*android:anim/fade_out</item>
+    </style>
+    <style name="BL.Widget.SeekBar" parent="@style/BL.Widget">
+        <item name="android:paddingLeft">8.0dip</item>
+        <item name="android:paddingRight">8.0dip</item>
+        <item name="android:focusable">true</item>
+        <item name="android:maxHeight">@dimen/framework_seekbar_height</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@null</item>
+        <item name="android:progressDrawable">@drawable/framework_seekbar_bg</item>
+        <item name="android:minHeight">@dimen/framework_seekbar_height</item>
+        <item name="android:thumb">@drawable/framework_seekbar_control_selector</item>
+        <item name="android:thumbOffset">8.0dip</item>
+        <item name="progressBar">@drawable/framework_seekbar_progress</item>
+        <item name="progressBarMask">@drawable/framework_seekbar_progress_mask</item>
+    </style>
+    <style name="BL.Widget.SeekBar2" parent="@*android:style/Widget.SeekBar">
+        <item name="android:paddingLeft">8.0dip</item>
+        <item name="android:paddingRight">8.0dip</item>
+        <item name="android:focusable">true</item>
+        <item name="android:maxHeight">4.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@drawable/framework_seekbar_horizontal</item>
+        <item name="android:progressDrawable">@drawable/framework_seekbar_horizontal</item>
+        <item name="android:minHeight">4.0dip</item>
+        <item name="android:thumb">@drawable/framework_seekbar_control_selector</item>
+        <item name="android:thumbOffset">8.0dip</item>
+    </style>
+    <style name="BL.Widget.ProgressBar" parent="@*android:style/Widget.ProgressBar">
+        <item name="android:maxWidth">48.0dip</item>
+        <item name="android:maxHeight">48.0dip</item>
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:indeterminateDuration">3500</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:minWidth">48.0dip</item>
+        <item name="android:minHeight">48.0dip</item>
+    </style>
+    <style name="BL.Widget.ProgressBar.Large" parent="@style/BL.Widget.ProgressBar">
+        <item name="android:maxWidth">76.0dip</item>
+        <item name="android:maxHeight">76.0dip</item>
+        <item name="android:minWidth">76.0dip</item>
+        <item name="android:minHeight">76.0dip</item>
+    </style>
+    <style name="BL.Widget.ProgressBar.Small" parent="@style/BL.Widget.ProgressBar">
+        <item name="android:maxWidth">16.0dip</item>
+        <item name="android:maxHeight">16.0dip</item>
+        <item name="android:minWidth">16.0dip</item>
+        <item name="android:minHeight">16.0dip</item>
+    </style>
+    <style name="BL.Widget.ProgressBar.Horizontal" parent="@style/BL.Widget.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/framework_progress_horizontal_indeterminate</item>
+        <item name="android:progressDrawable">@drawable/framework_seekbar_horizontal</item>
+        <item name="android:minHeight">3.0dip</item>
+    </style>
+    <style name="BL.Widget.ActionBar" parent="@*android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:icon">@*android:color/transparent</item>
+        <item name="android:background">@drawable/framework_title_bar_bg</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+        <item name="android:paddingBottom">0.0dip</item>
+        <item name="android:divider">@null</item>
+        <item name="android:height">?android:actionBarSize</item>
+        <item name="android:displayOptions">showHome|homeAsUp|showTitle</item>
+        <item name="android:titleTextStyle">@style/BL.TextAppearance.Title</item>
+        <item name="android:subtitleTextStyle">@style/BL.TextAppearance.Title.Medium.Secondary</item>
+        <item name="android:itemPadding">0.0dip</item>
+        <item name="android:backgroundStacked">@null</item>
+        <item name="android:backgroundSplit">@null</item>
+    </style>
+    <style name="BL.Widget.ActionBar.NoTitle" parent="@style/BL.Widget.ActionBar">
+        <item name="android:displayOptions">showHome|homeAsUp</item>
+    </style>
+    <style name="BL.Widget.ActionBar.Split" parent="@style/BL.Widget.ActionBar">
+        <item name="android:background">@null</item>
+        <item name="android:backgroundSplit">@null</item>
+    </style>
+    <style name="BL.Widget.ActionBar.TabBar" parent="@*android:style/Widget.ActionBar.TabBar">
+        <item name="android:background">@null</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+    </style>
+    <style name="BL.Widget.ActionBar.TabView" parent="@*android:style/Widget.ActionBar.TabView">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+    </style>
+    <style name="BL.Widget.ActionBar.TabText" parent="@style/BL.Widget.ActionBar">
+        <item name="android:textSize">@dimen/framework_text_font_size_tab</item>
+        <item name="android:textColor">@color/framework_tab_text</item>
+    </style>
+    <style name="BL.Widget.ActionMode" parent="@style/BL.Widget">
+        <item name="android:titleTextStyle">@style/BL.TextAppearance.EditMode</item>
+        <item name="android:subtitleTextStyle">@null</item>
+        <item name="android:backgroundSplit">@null</item>
+    </style>
+    <style name="BL.Widget.ActionBarMovableLayout" parent="@style/BL.Widget" />
+    <style name="BL.Widget.ActionBar.Large" parent="@style/BL.Widget.ActionBar">
+        <item name="android:height">@dimen/framework_action_bar_height_large</item>
+    </style>
+    <style name="BL.Widget.SlidingButton" parent="@style/BL.Widget">
+        <item name="buttonFrame">@drawable/framework_sliding_btn_frame</item>
+        <item name="buttonSlider">@drawable/framework_sliding_btn_slider</item>
+        <item name="buttonSliderPressed">@drawable/framework_sliding_btn_slider_pressed</item>
+        <item name="buttonOnDisable">@drawable/framework_sliding_btn_on_disable</item>
+        <item name="buttonOffDisable">@drawable/framework_sliding_btn_off_disable</item>
+        <item name="buttonMask">@drawable/framework_sliding_btn_mask</item>
+        <item name="buttonBarOff">@drawable/framework_sliding_btn_off</item>
+        <item name="buttonBarOn">@drawable/framework_sliding_btn_on</item>
+    </style>
+    <style name="BL.Widget.TabBar" parent="@style/BL.Widget">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/framework_tab_text</item>
+        <item name="android:background">@drawable/framework_tab_bg</item>
+        <item name="android:paddingTop">8.0dip</item>
+    </style>
+    <style name="BL.Theme" parent="@*android:style/Theme.Holo.Light">
+        <item name="android:textAppearance">@style/BL.TextAppearance</item>
+        <item name="android:textAppearanceInverse">@style/BL.TextAppearance.Inverse</item>
+        <item name="android:textColorPrimary">@color/framework_primary_text</item>
+        <item name="android:textColorPrimaryDisableOnly">@color/framework_text_color_disable</item>
+        <item name="android:textColorSecondary">@color/framework_secondary_text</item>
+        <item name="android:textColorPrimaryInverse">@color/framework_primary_text</item>
+        <item name="android:textColorSecondaryInverse">@color/framework_secondary_text</item>
+        <item name="android:textColorPrimaryNoDisable">@color/framework_primary_text</item>
+        <item name="android:textColorSecondaryNoDisable">@color/framework_secondary_text</item>
+        <item name="android:textAppearanceLarge">@style/BL.TextAppearance.Large</item>
+        <item name="android:textAppearanceMedium">@style/BL.TextAppearance.Medium</item>
+        <item name="android:textAppearanceSmall">@style/BL.TextAppearance.Small</item>
+        <item name="android:textAppearanceLargeInverse">@style/BL.TextAppearance.Large.Inverse</item>
+        <item name="android:textAppearanceMediumInverse">@style/BL.TextAppearance.Medium.Inverse</item>
+        <item name="android:textAppearanceSmallInverse">@style/BL.TextAppearance.Small.Inverse</item>
+        <item name="android:buttonStyle">@style/BL.Widget.Button</item>
+        <item name="android:listPreferredItemHeight">64.0dip</item>
+        <item name="android:expandableListPreferredItemPaddingLeft">40.0dip</item>
+        <item name="android:expandableListPreferredChildPaddingLeft">?android:expandableListPreferredItemPaddingLeft</item>
+        <item name="android:expandableListPreferredItemIndicatorLeft">3.0dip</item>
+        <item name="android:expandableListPreferredItemIndicatorRight">0.0dip</item>
+        <item name="android:expandableListPreferredChildIndicatorLeft">?android:expandableListPreferredItemIndicatorLeft</item>
+        <item name="android:expandableListPreferredChildIndicatorRight">?android:expandableListPreferredItemIndicatorRight</item>
+        <item name="android:windowBackground">@drawable/framework_window_bg</item>
+        <item name="android:panelFullBackground">@color/framework_dialog_bg_color</item>
+        <item name="android:autoCompleteTextViewStyle">@style/BL.Widget.AutoCompleteTextView</item>
+        <item name="android:checkboxStyle">@style/BL.Widget.CompoundButton.CheckBox</item>
+        <item name="android:dropDownListViewStyle">@style/BL.Widget.ListView.DropDown</item>
+        <item name="android:editTextStyle">@style/BL.Widget.EditText</item>
+        <item name="android:listViewStyle">@style/BL.Widget.ListView</item>
+        <item name="android:popupWindowStyle">@style/BL.Widget.PopupWindow</item>
+        <item name="android:progressBarStyle">@style/BL.Widget.ProgressBar</item>
+        <item name="android:progressBarStyleHorizontal">@style/BL.Widget.ProgressBar.Horizontal</item>
+        <item name="android:progressBarStyleSmall">@style/BL.Widget.ProgressBar.Small</item>
+        <item name="android:progressBarStyleLarge">@style/BL.Widget.ProgressBar.Large</item>
+        <item name="android:seekBarStyle">@style/BL.Widget.SeekBar2</item>
+        <item name="android:radioButtonStyle">@style/BL.Widget.CompoundButton.RadioButton</item>
+        <item name="android:textViewStyle">@style/BL.Widget.TextView</item>
+        <item name="android:dropDownItemStyle">@style/BL.Widget.DropDownItem</item>
+        <item name="android:preferenceScreenStyle">@style/BL.Preference.PreferenceScreen</item>
+        <item name="android:preferenceCategoryStyle">@style/BL.Preference.Category</item>
+        <item name="android:preferenceInformationStyle">@style/BL.Preference.Information</item>
+        <item name="android:preferenceStyle">@style/BL.Preference</item>
+        <item name="android:checkBoxPreferenceStyle">@style/BL.Preference.CheckBoxPreference</item>
+        <item name="android:yesNoPreferenceStyle">@style/BL.Preference.DialogPreference.YesNoPreference</item>
+        <item name="android:dialogPreferenceStyle">@style/BL.Preference.DialogPreference</item>
+        <item name="android:editTextPreferenceStyle">@style/BL.Preference.DialogPreference.EditTextPreference</item>
+        <item name="android:ringtonePreferenceStyle">@style/BL.Preference.RingtonePreference</item>
+        <item name="android:preferenceLayoutChild">@layout/framework_preference_child</item>
+        <item name="android:textColorHint">@color/framework_text_color_hint</item>
+        <item name="android:windowAnimationStyle">@style/BL.Animation.Activity.Slide</item>
+        <item name="android:listSeparatorTextViewStyle">@style/BL.Widget.TextView.ListSeparator</item>
+        <item name="android:listDivider">@null</item>
+        <item name="android:listChoiceIndicatorSingle">@drawable/framework_btn_radio</item>
+        <item name="android:listChoiceIndicatorMultiple">@drawable/framework_btn_checkbox</item>
+        <item name="android:textColorPrimaryInverseDisableOnly">@color/framework_text_color_disable</item>
+        <item name="android:actionBarStyle">@style/BL.Widget.ActionBar</item>
+        <item name="android:actionBarSize">@dimen/framework_action_bar_height</item>
+        <item name="android:actionBarTabStyle">@style/BL.Widget.ActionBar.TabView</item>
+        <item name="android:actionBarTabBarStyle">@style/BL.Widget.ActionBar.TabBar</item>
+        <item name="android:actionBarTabTextStyle">@style/BL.Widget.ActionBar.TabText</item>
+        <item name="android:listPopupWindowStyle">@style/BL.Widget.ListPopupWindow</item>
+        <item name="android:popupMenuStyle">@style/BL.Widget.PopupMenu</item>
+        <item name="android:listDividerAlertDialog">@color/framework_list_view_divider_color</item>
+        <item name="android:textColorAlertDialogListItem">@color/framework_list_primary_text</item>
+        <item name="android:homeAsUpIndicator">@drawable/framework_title_bar_back_button</item>
+        <item name="android:buttonBarStyle">@style/BL.Widget.ButtonBar</item>
+        <item name="android:buttonBarButtonStyle">@style/BL.Widget.Button.Dialog</item>
+        <item name="android:editTextColor">@color/framework_primary_text</item>
+        <item name="android:switchPreferenceStyle">@style/BL.Preference.SwitchPreference</item>
+        <item name="android:listPreferredItemHeightLarge">?android:listPreferredItemHeight</item>
+        <item name="android:listPreferredItemHeightSmall">50.0dip</item>
+        <item name="android:actionBarSplitStyle">@style/BL.Widget.ActionBar.Split</item>
+        <item name="android:actionModeStyle">@style/BL.Widget.ActionMode</item>
+        <item name="android:actionBarItemBackground">@null</item>
+        <item name="framework_tabBarSize">60.0dip</item>
+        <item name="framework_tabBarStyle">@style/BL.Widget.TabBar</item>
+    </style>
+    <style name="BL.Theme.Light" parent="@style/BL.Theme">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="BL.Theme.Light.NoTitle" parent="@style/BL.Theme.Light">
+        <item name="android:windowBackground">@color/framework_window_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="BL.Theme.Light.UserGuide" parent="@style/BL.Theme.Light">
+        <item name="android:windowBackground">@color/framework_window_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/BL.Animation.Activity</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="BL.Theme.Light.WithTitle" parent="@style/BL.Theme.Light">
+        <item name="android:windowNoTitle">false</item>
+    </style>
+    <style name="BL.Theme.Light.Settings" parent="@style/BL.Theme.Light">
+        <item name="android:windowBackground">@color/framework_window_background</item>
+    </style>
+    <style name="BL.Theme.Light.Settings.NoTitle" parent="@style/BL.Theme.Light.Settings">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="BL.Theme.Light.Dialog" parent="@style/BL.Theme.Light">
+        <item name="android:windowBackground">@drawable/framework_popup_window_bg</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@style/BL.Widget.DialogTitle</item>
+        <item name="android:windowAnimationStyle">@style/BL.Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:borderlessButtonStyle">@*android:style/Widget.Holo.Light.Button.Borderless.Small</item>
+        <item name="android:buttonBarStyle">@*android:style/Holo.Light.ButtonBar.AlertDialog</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:listPreferredItemPaddingLeft">0.0dip</item>
+        <item name="android:listPreferredItemPaddingRight">0.0dip</item>
+    </style>
+    <style name="BL.Theme.Light.Dialog.MinWidth" parent="@style/BL.Theme.Light.Dialog">
+        <item name="android:windowMinWidthMajor">@*android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@*android:dimen/dialog_min_width_minor</item>
+    </style>
+    <style name="BL.Theme.Light.Dialog.NoTitle" parent="@style/BL.Theme.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="BL.Theme.Light.Dialog.NoTitle.Alert" parent="@style/BL.Theme.Light.Dialog.NoTitle">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowMinWidthMajor">100.0%</item>
+        <item name="android:windowMinWidthMinor">100.0%</item>
+    </style>
+    <style name="BL.Theme.Light.Dialog.NoTitle.MinWidth" parent="@style/BL.Theme.Light.Dialog.NoTitle">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowMinWidthMajor">@*android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@*android:dimen/dialog_min_width_minor</item>
+    </style>
+    <style name="BL.Theme.Light.Dialog.Alert" parent="@style/BL.Theme.Light.Dialog">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowMinWidthMajor">88.0%</item>
+        <item name="android:windowMinWidthMinor">88.0%</item>
+    </style>
+    <style name="BL.Theme.Light.Dialog.Alert.Transparent" parent="@style/BL.Theme.Light.Dialog.Alert">
+        <item name="android:windowBackground">@color/framework_transparent</item>
+    </style>
+    <style name="BL.Theme.Light.Dialog.Alert.Transparent.Custom" parent="@style/BL.Theme.Light.Dialog.Alert.Transparent">
+        <item name="layout">@layout/framework_alert_dialog_custom_transparent</item>
+    </style>
+    <style name="BL.Theme.Light.Dialog.Alert.Bottom" parent="@style/BL.Theme.Light.Dialog.Alert">
+        <item name="android:windowBackground">@color/framework_dialog_bg_color</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/BL.Animation.Menu</item>
+        <item name="android:windowMinWidthMajor">100.0%</item>
+        <item name="android:windowMinWidthMinor">100.0%</item>
+        <item name="layout">@layout/framework_alert_dialog_bottom</item>
+    </style>
+    <style name="BL.Theme.Light.Translucent" parent="@style/BL.Theme.Light">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@*android:style/Animation</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="BL.Theme.Light.Translucent.NoTitle" parent="@style/BL.Theme.Light.Translucent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="BL.Theme.NoDisplay" parent="@style/BL.Theme">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowNoDisplay">true</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+    <style name="BL.Theme.Light.ActionBar" parent="@style/BL.Theme.Light" />
+    <style name="BL.Theme.Light.ActionBar.NoTitle" parent="@style/BL.Theme.Light.ActionBar">
+        <item name="android:actionBarStyle">@style/BL.Widget.ActionBar.NoTitle</item>
+    </style>
+    <style name="BL.Theme.Light.Dialog.Alert.GlobalAction" parent="@style/BL.Theme.Light.Dialog.Alert">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:alertDialogStyle">@style/BL.AlertDialog.GlobalAction</item>
+        <item name="android:windowAnimationStyle">@style/BL.Animation.ZoomButtons</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="BL.Theme.Light.CompactMenu" parent="@style/BL.Theme.Light" />
+    <style name="BL.Theme.Light.Panel" parent="@style/BL.Theme.Light">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="BL.Theme.Light.Panel.Volume" parent="@style/BL.Theme.Light.Panel">
+        <item name="android:windowAnimationStyle">@style/BL.Animation.VolumePanel</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+    <style name="BL.Theme.Light.ActionBarMovable" parent="@style/BL.Theme.Light">
+        <item name="android:actionBarStyle">@style/BL.Widget.ActionBar.Large</item>
+    </style>
+    <style name="BL.Theme.IconPanel" parent="@style/BL.Theme">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+    <style name="BL.Theme.Light.CustomDialog" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@*android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="AppBaseTheme" parent="@*android:style/Theme.Light" />
+    <style name="AppTheme" parent="@style/AppBaseTheme" />
+    <style name="Lt_Dlg_Translucent_NoTitle" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="Lt_Dlg_Button">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:paddingTop">12.0dip</item>
+        <item name="android:paddingBottom">12.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="WkAuthProgressBarHorizontal" parent="@*android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">4.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@drawable/auth_progressbar_horizontal</item>
+        <item name="android:progressDrawable">@drawable/auth_progressbar_horizontal</item>
+        <item name="android:minHeight">4.0dip</item>
+    </style>
+    <style name="PluginTheme" parent="@style/BL.Theme.Light.Translucent.NoTitle" />
+    <style name="PluginThemeDialog" parent="@style/BL.Theme.Light.Translucent.NoTitle" />
+    <style name="WkBrowwserProgressBarHorizontal">
+        <item name="android:maxHeight">3.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@drawable/browser_progressbar_horizontal</item>
+        <item name="android:progressDrawable">@drawable/browser_progressbar_horizontal</item>
+        <item name="android:minHeight">3.0dip</item>
+    </style>
+    <style name="commentloadingProgressStyle" parent="@*android:style/Widget.ProgressBar.Large">
+        <item name="android:maxWidth">14.0dip</item>
+        <item name="android:maxHeight">14.0dip</item>
+        <item name="android:minWidth">14.0dip</item>
+        <item name="android:minHeight">14.0dip</item>
+    </style>
+    <style name="WkCommentInputDialog" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@*android:color/transparent</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowSoftInputMode">stateAlwaysVisible|adjustResize</item>
+    </style>
+    <style name="WkCommentFullScreenDialog" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@*android:color/transparent</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="dialogWindowNoAnim" parent="@*android:style/Animation">
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+    </style>
+    <style name="commentLoadingProgressStyle" parent="@*android:style/Widget.ProgressBar.Large">
+        <item name="android:maxWidth">22.0dip</item>
+        <item name="android:maxHeight">22.0dip</item>
+        <item name="android:minWidth">22.0dip</item>
+        <item name="android:minHeight">22.0dip</item>
+    </style>
+    <style name="initProgressStyle" parent="@*android:style/Widget.ProgressBar.Large">
+        <item name="android:maxWidth">22.0dip</item>
+        <item name="android:maxHeight">22.0dip</item>
+        <item name="android:minWidth">22.0dip</item>
+        <item name="android:minHeight">22.0dip</item>
+    </style>
+    <style name="loadingProgressStyle" parent="@*android:style/Widget.ProgressBar.Large">
+        <item name="android:maxWidth">14.0dip</item>
+        <item name="android:maxHeight">14.0dip</item>
+        <item name="android:minWidth">14.0dip</item>
+        <item name="android:minHeight">14.0dip</item>
+    </style>
+    <style name="videoProgressBarHorizontal">
+        <item name="android:maxHeight">2.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@drawable/feed_video_progress</item>
+        <item name="android:progressDrawable">@drawable/feed_video_progress</item>
+        <item name="android:minHeight">2.0dip</item>
+    </style>
+    <style name="Settings_Dlg_Transparent" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/BL.Animation.Menu</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="Settings_Dlg_Progress" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="Dialog_Fullscreen">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="sliding_menu_text">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#fff4f4f4</item>
+    </style>
+    <style name="Widget.CompoundButton.CheckBox" parent="@*android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/dm_list_item_box</item>
+    </style>
+    <style name="wifi_disabled_text">
+        <item name="android:textSize">@dimen/text_size_xsmall</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">156.0dip</item>
+        <item name="android:layout_height">40.0dip</item>
+        <item name="android:layout_marginTop">30.0dip</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="apgrade_ratingbar" parent="@*android:style/Widget.RatingBar">
+        <item name="android:maxHeight">30.0dip</item>
+        <item name="android:progressDrawable">@drawable/apgrade_big_star</item>
+        <item name="android:minHeight">30.0dip</item>
+    </style>
+    <style name="MyDialog" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="popupDialogWindowAnim" parent="@*android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/translate_up</item>
+    </style>
+    <style name="wifi_disabled_icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">168.0dip</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="wifi_list_item_title">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">#ff333333</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:max">30</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="dialog_title">
+        <item name="android:paddingTop">12.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="dialog_title_text">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">@color/main_blue</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">12.0dip</item>
+        <item name="android:layout_marginBottom">12.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="dialog_title_icon">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="wifi_options_dialog_item">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@null</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">60.0dip</item>
+    </style>
+    <style name="wifi_options_dialog_item_icon">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">24.0dip</item>
+    </style>
+    <style name="wifi_options_dialog_item_title">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">#ff484a50</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">7.0dip</item>
+    </style>
+    <style name="wifilist_item_summary">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ffc0c0c0</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="wifi_item">
+        <item name="android:gravity">start</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">16.0dip</item>
+        <item name="android:layout_marginTop">8.0dip</item>
+        <item name="android:layout_marginRight">16.0dip</item>
+    </style>
+    <style name="wifi_item_label">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="wifi_item_content">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="wifi_item_edit_content">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="wifi_item_checkbox_text">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">30.0dip</item>
+    </style>
+    <style name="wifi_section">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Lt_EditText">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">@color/main_blue</item>
+        <item name="android:textColorHint">@color/connect_lt_edittext_hint</item>
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingRight">2.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Lt_CheckBox">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ff666666</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">@*android:color/transparent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableLeft">@drawable/framework_btn_checkbox</item>
+        <item name="android:drawablePadding">5.0dip</item>
+    </style>
+    <style name="Lt_CheckBox_block">
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">@*android:color/transparent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableLeft">@drawable/framework_btn_checkbox</item>
+    </style>
+    <style name="AnimBottom" parent="@*android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/connect_slide_right_in</item>
+        <item name="android:windowExitAnimation">@anim/connect_slide_right_out</item>
+    </style>
+    <style name="MyDialogStyleBottom" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="NoTitleBarTransluentActivity" parent="@*android:style/Theme.Translucent.NoTitleBar" />
+    <style name="Theme.Dialog" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:background">#00000000</item>
+    </style>
+    <style name="DMProgress_horizontal">
+        <item name="android:maxHeight">20.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@*android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/dm_progressbar_color</item>
+        <item name="android:minHeight">20.0dip</item>
+    </style>
+    <style name="Widget.BottomMenu.CheckBox" parent="@*android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/dm_menu_item_box</item>
+    </style>
+    <style name="PL" />
+    <style name="PL.Widget" parent="@style/PL" />
+    <style name="PL.TextAppearance" parent="@*android:style/TextAppearance">
+        <item name="android:textSize">@dimen/framework_text_font_size_primary</item>
+    </style>
+    <style name="PL.TextAppearance.DialogTitle" parent="@style/PL.TextAppearance">
+        <item name="android:textSize">@dimen/framework_text_font_size_main</item>
+        <item name="android:textColor">@color/framework_primary_color</item>
+    </style>
+    <style name="PL.Widget.DialogTitle" parent="@style/PL.Widget">
+        <item name="android:textAppearance">@style/BL.TextAppearance.DialogTitle</item>
+        <item name="android:textSize">@dimen/framework_text_font_size_main</item>
+        <item name="android:gravity">left</item>
+    </style>
+    <style name="PLProgressDialog" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:background">#00000000</item>
+    </style>
+    <style name="dialog_activity" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="BL.Theme.Light.Dialog.NoTitle.Alert.Transparent" parent="@style/BL.Theme.Light.Dialog.NoTitle.Alert">
+        <item name="android:windowBackground">@color/framework_transparent</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+</resources>

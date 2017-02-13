@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/comment_toolbar" android:layout_width="fill_parent" android:layout_height="46.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lantern.browser.comment.ui.WkCommentAvatarView android:id="@id/commentUserAvatar" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="16.0dip" />
+    <TextView android:textSize="13.0sp" android:textColor="#ff999999" android:gravity="center_vertical" android:id="@id/commentToolBarInputBtn" android:background="@drawable/comment_intput_btn" android:paddingLeft="12.0dip" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_marginLeft="16.0dip" android:text="@string/comment_input" android:layout_weight="1.0" />
+    <RelativeLayout android:id="@id/commentToolBarCommentBtn" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="22.0dip">
+        <ImageView android:id="@id/commentToolBarCommentImg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/comment_count_bubble" android:layout_centerVertical="true" />
+        <TextView android:textSize="8.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/commentToolBarCommentTxt" android:background="@drawable/comment_count_bg" android:paddingLeft="3.0dip" android:paddingTop="0.0dip" android:paddingRight="3.0dip" android:paddingBottom="0.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="13.0dip" android:includeFontPadding="false" android:layout_alignBottom="@id/commentToolBarCommentImg" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/commentToolBarShareBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginRight="22.0dip" android:src="@drawable/comment_share" />
+</LinearLayout>

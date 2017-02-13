@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/settings_pref_app_settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/settings_block_routine" />
+    <CheckBoxPreference android:title="@string/settings_pref_show_icon_notification_title" android:key="settings_pref_show_icon_notification" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/settings_pref_remind_when_quit_title" android:key="settings_pref_remind_when_quit" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/settings_pref_auto_enable_mobile" android:key="settings_pref_auto_enable_mobile" android:defaultValue="false" />
+    <PreferenceCategory android:title="@string/settings_block_privacy" android:key="backup_and_share_group" />
+    <CheckBoxPreference android:title="@string/settings_pref_share_auto_title" android:key="settings_pref_share_auto" android:summary="@string/settings_pref_share_auto_summary" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/settings_pref_backup_auto_title" android:key="settings_pref_backup_auto" android:summary="@string/settings_pref_backup_auto_summary" android:defaultValue="false" />
+    <PreferenceCategory android:title="@string/settings_block_remind" />
+    <CheckBoxPreference android:title="@string/settings_pref_check_version_startup_title" android:key="settings_pref_check_version_startup" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/settings_pref_new_message_tip_title" android:key="settings_pref_new_message_tip" android:summary="@string/settings_pref_new_message_tip_summary" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/settings_pref_new_message_night_tip_title" android:key="settings_pref_new_message_night_tip" android:summary="@string/settings_pref_new_message_night_tip_summary" android:defaultValue="true" />
+</PreferenceScreen>

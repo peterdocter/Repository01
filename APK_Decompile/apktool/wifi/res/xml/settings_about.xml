@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/settings_about_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lantern.settings.ui.AppInfoPreference android:layout="@layout/settings_preference_appinfo" android:key="setting_pref_appinfo" />
+    <Preference android:title="@string/settings_pref_product_introduct_title" android:key="settings_pref_product_introduct" />
+    <Preference android:title="@string/settings_pref_fqa_title" android:key="settings_pref_fqa" android:fragment="com.lantern.settings.ui.FQAFragment" />
+    <ValuePreference android:title="@string/settings_pref_follow_weixin_title" android:key="settings_pref_follow_weixin" />
+    <com.lantern.settings.widget.ProtocalPreference android:layout="@layout/settings_preference_protocal" android:key="setting_pref_ptotocal" />
+</PreferenceScreen>

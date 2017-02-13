@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="24.0dip" android:paddingTop="16.0dip" android:paddingRight="24.0dip" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="#ff000000" android:id="@id/message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dialog_whether_open_mobile_conn_msg" style="@style/BL.TextAppearance.Medium" />
+    <bluefay.widget.BLCheckBox android:id="@id/confirm_checkbox" android:paddingLeft="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:button="@drawable/framework_btn_checkbox" android:text="@string/mobile_network_auto_enable_confirm" style="@style/BL.Widget.CompoundButton.CheckBox" />
+</LinearLayout>

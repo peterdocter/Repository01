@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:background="@drawable/framework_preference_item_middle_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/framework_preference_item_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/framework_preference_icon_minWidth">
+        <ImageView android:gravity="center" android:layout_gravity="center" android:id="@*android:id/icon" android:paddingRight="@dimen/framework_preference_item_padding_inner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/framework_preference_item_padding_inner" android:layout_marginBottom="@dimen/framework_preference_item_padding_inner" android:scaleType="fitCenter" android:adjustViewBounds="true" android:maxHeight="47.0dip" android:minWidth="48.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:paddingTop="@dimen/framework_preference_item_padding_top" android:paddingRight="@dimen/framework_preference_item_padding_inner" android:paddingBottom="@dimen/framework_preference_item_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:ellipsize="marquee" android:id="@*android:id/title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/BL.TextAppearance.PreferenceList" />
+        <TextView android:id="@*android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="10" android:layout_below="@*android:id/title" android:layout_alignLeft="@*android:id/title" style="@style/BL.TextAppearance.List.Secondary.Preference" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@*android:id/widget_frame" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="@dimen/framework_preference_widget_width" />
+</LinearLayout>

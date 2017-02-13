@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/layout_logo" android:layout_width="64.0dip" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/iv_logo" android:layout_width="42.0dip" android:layout_height="42.0dip" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/layout_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/layout_logo">
+        <TextView android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:singleLine="true" style="@android:style/TextAppearance.StatusBar.EventContent.Title" />
+    </FrameLayout>
+</RelativeLayout>

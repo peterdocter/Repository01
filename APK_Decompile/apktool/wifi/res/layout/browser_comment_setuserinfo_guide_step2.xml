@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/setAvatarLayout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/browser_dialog_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="60.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="#ff4d4d4d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="70.0dip" android:text="@string/comment_guide_set_avatar" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff999999" android:id="@id/resetNickName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/comment_guide_reset_nickname" />
+        <View android:id="@id/deviderLine" android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="30.0dip" android:layout_below="@id/inputTextUnderLine" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="54.0dip">
+            <TextView android:textSize="17.0sp" android:textColor="#ff999999" android:gravity="center" android:id="@id/skipStep" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/comment_guide_skip_step" android:layout_weight="1.0" />
+            <View android:id="@id/skipDividerLine" android:background="#ffcccccc" android:layout_width="1.0px" android:layout_height="fill_parent" />
+            <TextView android:textSize="17.0sp" android:textColor="#ff0285f0" android:gravity="center" android:id="@id/uploadAvatar" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/comment_guide_upload_avatar" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="120.0dip" android:layout_height="120.0dip">
+        <View android:background="@drawable/browser_comment_change_avatar_shadow" android:layout_width="120.0dip" android:layout_height="60.0dip" android:layout_marginTop="60.0dip" />
+        <FrameLayout android:id="@id/avatarShowArea" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <View android:layout_gravity="center" android:background="@drawable/browser_white_circle_bg" android:layout_width="88.0dip" android:layout_height="88.0dip" />
+            <ImageView android:layout_gravity="center" android:id="@id/userAvatar" android:layout_width="80.0dip" android:layout_height="80.0dip" android:src="@drawable/browser_comment_change_avatar" />
+        </FrameLayout>
+    </RelativeLayout>
+</FrameLayout>

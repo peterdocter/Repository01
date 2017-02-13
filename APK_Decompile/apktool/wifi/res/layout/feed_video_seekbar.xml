@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SeekBar android:background="@null" android:maxHeight="3.5dip" android:max="100" android:progressDrawable="@drawable/feed_video_seekbar_progress" android:minHeight="3.5dip" android:thumb="@drawable/feed_video_seek_thumb"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

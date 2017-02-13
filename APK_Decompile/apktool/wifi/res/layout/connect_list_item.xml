@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wifi.connect.ui.WifiListItemView android:gravity="center_vertical" android:background="@drawable/wifi_list_item_divider" android:layout_width="fill_parent" android:layout_height="@dimen/wifi_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/signal_level" android:layout_width="33.0dip" android:layout_height="33.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="13.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" style="@style/wifi_list_item_title" />
+            <TextView android:textSize="16.0sp" android:ellipsize="end" android:id="@id/title_with_plugin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" android:drawableRight="@drawable/connect_ap_type_plugin" android:drawablePadding="9.0dip" style="@style/wifi_list_item_title" />
+        </LinearLayout>
+        <TextView android:textSize="11.0sp" android:textColor="#ff999999" android:ellipsize="end" android:id="@id/sub_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" />
+    </LinearLayout>
+    <ImageView android:id="@id/status" android:layout_width="33.0dip" android:layout_height="33.0dip" android:layout_marginRight="18.0dip" />
+</com.wifi.connect.ui.WifiListItemView>

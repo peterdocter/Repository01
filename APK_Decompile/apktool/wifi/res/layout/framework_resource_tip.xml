@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tips" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/tips_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/framework_list_fragment_tips_text_color" android:id="@id/tips_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@null" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.bluefay.material.MaterialProgressBar android:id="@id/progress_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/framework_black_color" android:id="@id/progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@null" />
+    </LinearLayout>
+</FrameLayout>

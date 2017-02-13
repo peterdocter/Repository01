@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="framework_weekday">
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+        <item>星期日</item>
+    </string-array>
+    <string-array name="country_code_names">
+        <item>AD:安道尔</item>
+        <item>AE:阿联酋</item>
+        <item>AF:阿富汗</item>
+        <item>AG:安提瓜和巴布达</item>
+        <item>AI:安圭拉</item>
+        <item>AL:阿尔巴尼亚</item>
+        <item>AM:亚美尼亚</item>
+        <item>AN:荷属安的列斯</item>
+        <item>AO:安哥拉</item>
+        <item>AQ:南极洲</item>
+        <item>AR:阿根廷</item>
+        <item>AS:美属萨摩亚</item>
+        <item>AT:奥地利</item>
+        <item>AU:澳大利亚</item>
+        <item>AW:阿鲁巴</item>
+        <item>AZ:阿塞拜疆</item>
+        <item>BA:波黑</item>
+        <item>BB:巴巴多斯</item>
+        <item>BD:孟加拉国</item>
+        <item>BE:比利时</item>
+        <item>BF:布基纳法索</item>
+        <item>BG:保加利亚</item>
+        <item>BH:巴林</item>
+        <item>BI:布隆迪</item>
+        <item>BJ:贝宁</item>
+        <item>BM:百慕大</item>
+        <item>BN:文莱</item>
+        <item>BO:玻利维亚</item>
+        <item>BR:巴西</item>
+        <item>BS:巴哈马</item>
+        <item>BT:不丹</item>
+        <item>BV:布维岛</item>
+        <item>BW:博茨瓦纳</item>
+        <item>BY:白俄罗斯</item>
+        <item>BZ:伯利兹</item>
+        <item>CA:加拿大</item>
+        <item>CC:科科斯（基林）群岛</item>
+        <item>CD:刚果（金）</item>
+        <item>CF:中非</item>
+        <item>CG:刚果（布）</item>
+        <item>CH:瑞士</item>
+        <item>CI:科特迪瓦</item>
+        <item>CK:库克群岛</item>
+        <item>CL:智利</item>
+        <item>CM:喀麦隆</item>
+        <item>CN:中国</item>
+        <item>CO:哥伦比亚</item>
+        <item>CR:哥斯达黎加</item>
+        <item>CS:圣诞岛</item>
+        <item>CU:古巴</item>
+        <item>CV:佛得角</item>
+        <item>CY:塞浦路斯</item>
+        <item>CZ:捷克</item>
+        <item>DE:德国</item>
+        <item>DJ:吉布提</item>
+        <item>DK:丹麦</item>
+        <item>DM:多米尼克</item>
+        <item>DO:多米尼加共和国</item>
+        <item>DZ:阿尔及利亚</item>
+        <item>EC:厄瓜多尔</item>
+        <item>EE:爱沙尼亚</item>
+        <item>EG:埃及</item>
+        <item>EH:西撒哈拉</item>
+        <item>ER:厄立特里亚</item>
+        <item>ES:西班牙</item>
+        <item>ET:埃塞俄比亚</item>
+        <item>FI:芬兰</item>
+        <item>FJ:斐济</item>
+        <item>FK:福克兰群岛（马尔维纳斯）</item>
+        <item>FM:密克罗尼西亚联邦</item>
+        <item>FO:法罗群岛</item>
+        <item>FR:法国</item>
+        <item>GA:加蓬</item>
+        <item>GB:英国</item>
+        <item>GD:格林纳达</item>
+        <item>GE:格鲁吉亚</item>
+        <item>GF:法属圭亚那</item>
+        <item>GH:加纳</item>
+        <item>GI:直布罗陀</item>
+        <item>GL:格陵兰</item>
+        <item>GM:冈比亚</item>
+        <item>GN:几内亚</item>
+        <item>GP:瓜德罗普</item>
+        <item>GQ:赤道几内亚</item>
+        <item>GR:希腊</item>
+        <item>GS:南乔治亚岛和南桑德韦奇岛</item>
+        <item>GT:危地马拉</item>
+        <item>GU:关岛</item>
+        <item>GW:几内亚比绍</item>
+        <item>GY:圭亚那</item>
+        <item>HK:中国香港</item>
+        <item>HM:赫德岛和麦克唐纳岛</item>
+        <item>HN:洪都拉斯</item>
+        <item>HR:克罗地亚</item>
+        <item>HT:海地</item>
+        <item>HU:匈牙利</item>
+        <item>ID:印度尼西亚</item>
+        <item>IE:爱尔兰</item>
+        <item>IL:以色列</item>
+        <item>IN:印度</item>
+        <item>IO:英属印度洋领土</item>
+        <item>IQ:伊拉克</item>
+        <item>IR:伊朗</item>
+        <item>IS:冰岛</item>
+        <item>IT:意大利</item>
+        <item>JM:牙买加</item>
+        <item>JO:约旦</item>
+        <item>JP:日本</item>
+        <item>KE:肯尼亚</item>
+        <item>KG:吉尔吉斯斯坦</item>
+        <item>KH:柬埔寨</item>
+        <item>KI:基里巴斯</item>
+        <item>KM:科摩罗</item>
+        <item>KN:圣基茨和尼维斯</item>
+        <item>KP:朝鲜</item>
+        <item>KR:韩国</item>
+        <item>KW:科威特</item>
+        <item>KY:开曼群岛</item>
+        <item>KZ:哈萨克斯坦</item>
+        <item>LA:老挝</item>
+        <item>LB:黎巴嫩</item>
+        <item>LC:圣卢西亚</item>
+        <item>LI:列支敦士登</item>
+        <item>LK:斯里兰卡</item>
+        <item>LR:利比里亚</item>
+        <item>LS:莱索托</item>
+        <item>LT:立陶宛</item>
+        <item>LU:卢森堡</item>
+        <item>LV:拉脱维亚</item>
+        <item>LY:利比亚</item>
+        <item>MA:摩洛哥</item>
+        <item>MC:摩纳哥</item>
+        <item>MD:摩尔多瓦</item>
+        <item>MG:马达加斯加</item>
+        <item>MH:马绍尔群岛</item>
+        <item>MK:前南马其顿</item>
+        <item>ML:马里</item>
+        <item>MM:缅甸</item>
+        <item>MN:蒙古</item>
+        <item>MO:中国澳门</item>
+        <item>MP:北马里亚纳</item>
+        <item>MQ:马提尼克</item>
+        <item>MR:毛里塔尼亚</item>
+        <item>MS:蒙特塞拉特</item>
+        <item>MT:马耳他</item>
+        <item>MU:毛里求斯</item>
+        <item>MV:马尔代夫</item>
+        <item>MW:马拉维</item>
+        <item>MX:墨西哥</item>
+        <item>MY:马来西亚</item>
+        <item>MZ:莫桑比克</item>
+        <item>NA:纳米比亚</item>
+        <item>NC:新喀里多尼亚</item>
+        <item>NE:尼日尔</item>
+        <item>NF:诺福克岛</item>
+        <item>NG:尼日利亚</item>
+        <item>NI:尼加拉瓜</item>
+        <item>NL:荷兰</item>
+        <item>NO:挪威</item>
+        <item>NP:尼泊尔</item>
+        <item>NR:瑙鲁</item>
+        <item>NU:纽埃</item>
+        <item>NZ:新西兰</item>
+        <item>OM:阿曼</item>
+        <item>PA:巴拿马</item>
+        <item>PE:秘鲁</item>
+        <item>PF:法属波利尼西亚</item>
+        <item>PG:巴布亚新几内亚</item>
+        <item>PH:菲律宾</item>
+        <item>PK:巴基斯坦</item>
+        <item>PL:波兰</item>
+        <item>PM:圣皮埃尔和密克隆</item>
+        <item>PN:皮特凯恩群岛</item>
+        <item>PR:波多黎各</item>
+        <item>PS:巴勒斯坦</item>
+        <item>PT:葡萄牙</item>
+        <item>PW:帕劳</item>
+        <item>PY:巴拉圭</item>
+        <item>QA:卡塔尔</item>
+        <item>RE:留尼汪</item>
+        <item>RO:罗马尼亚</item>
+        <item>RU:俄罗斯联邦</item>
+        <item>RW:卢旺达</item>
+        <item>SA:沙特阿拉伯</item>
+        <item>SB:所罗门群岛</item>
+        <item>SC:塞舌尔</item>
+        <item>SD:苏丹</item>
+        <item>SE:瑞典</item>
+        <item>SG:新加坡</item>
+        <item>SI:斯洛文尼亚</item>
+        <item>SJ:斯瓦尔巴群岛</item>
+        <item>SK:斯洛伐克</item>
+        <item>SL:塞拉利昂</item>
+        <item>SM:圣马力诺</item>
+        <item>SN:塞内加尔</item>
+        <item>SO:索马里</item>
+        <item>SR:苏里南</item>
+        <item>SV:萨尔瓦多</item>
+        <item>SY:叙利亚</item>
+        <item>SZ:斯威士兰</item>
+        <item>Sh:圣赫勒拿</item>
+        <item>St:圣多美和普林西比</item>
+        <item>TC:特克斯和凯科斯群岛</item>
+        <item>TD:乍得</item>
+        <item>TF:法属南部领土</item>
+        <item>TG:多哥</item>
+        <item>TH:泰国</item>
+        <item>TJ:塔吉克斯坦</item>
+        <item>TK:托克劳</item>
+        <item>TM:土库曼斯坦</item>
+        <item>TN:突尼斯</item>
+        <item>TO:汤加</item>
+        <item>TP:东帝汶</item>
+        <item>TR:土耳其</item>
+        <item>TT:特立尼达和多巴哥</item>
+        <item>TV:图瓦卢</item>
+        <item>TW:中国台湾</item>
+        <item>TZ:坦桑尼亚</item>
+        <item>UA:乌克兰</item>
+        <item>UG:乌干达</item>
+        <item>UM:美国本土外小岛屿</item>
+        <item>US:美国</item>
+        <item>UY:乌拉圭</item>
+        <item>UZ:乌兹别克斯坦</item>
+        <item>VA:梵蒂冈</item>
+        <item>VC:圣文森特和格林纳丁斯</item>
+        <item>VE:委内瑞拉</item>
+        <item>VG:英属维尔京群岛</item>
+        <item>VI:美属维尔京群岛</item>
+        <item>VN:越南</item>
+        <item>VU:瓦努阿图</item>
+        <item>WF:瓦利斯和富图纳</item>
+        <item>WS:萨摩亚</item>
+        <item>YE:也门</item>
+        <item>YT:马约特</item>
+        <item>YU:南斯拉夫</item>
+        <item>ZA:南非</item>
+        <item>ZM:赞比亚</item>
+        <item>ZW:津巴布韦</item>
+    </string-array>
+    <string-array name="app_check_setting">
+        <item>com.qihoo360.mobilesafe</item>
+        <item>com.tencent.qqpimsecure</item>
+        <item>cn.opda.a.phonoalbumshoushou</item>
+    </string-array>
+    <string-array name="app_check_setting_detail">
+        <item>app_check_setting_detail_xiaomi</item>
+        <item>app_check_setting_detail_360</item>
+        <item>app_check_setting_detail_baidu</item>
+    </string-array>
+    <string-array name="app_check_setting_detail_xiaomi">
+        <item>系统设置</item>
+        <item>全部设置</item>
+        <item>应用</item>
+        <item>WiFi万能钥匙</item>
+        <item>权限管理</item>
+        <item>定位，设置为允许</item>
+    </string-array>
+    <string-array name="app_check_setting_detail_vivo">
+        <item>i管家</item>
+        <item>软件管理</item>
+        <item>软件权限管理</item>
+        <item>WiFi万能钥匙</item>
+        <item>定位手机，设置为允许</item>
+    </string-array>
+    <string-array name="app_check_setting_detail_360">
+        <item>360手机卫士</item>
+        <item>安全防护</item>
+        <item>隐私行为监控</item>
+        <item>软件隐私权限管理</item>
+        <item>按软件查看</item>
+        <item>WiFi万能钥匙</item>
+        <item>获取位置信息，设置为允许</item>
+    </string-array>
+    <string-array name="app_check_setting_detail_baidu">
+        <item>百度手机卫士</item>
+        <item>发现更多</item>
+        <item>超强模式</item>
+        <item>隐私权限管理</item>
+        <item>隐私权限</item>
+        <item>所有应用</item>
+        <item>WiFi万能钥匙</item>
+        <item>获取地理位置，设置为允许</item>
+    </string-array>
+    <string-array name="app_check_setting_detail_tencent">
+        <item>腾讯手机管家</item>
+        <item>软件管理</item>
+        <item>软件权限管理</item>
+        <item>WiFi万能钥匙</item>
+        <item>获取手机位置，设置为允许</item>
+    </string-array>
+    <string-array name="app_check_setting_detail_meizu">
+        <item>安全中心</item>
+        <item>权限管理</item>
+        <item>隐私</item>
+        <item>定位</item>
+        <item>WiFi万能钥匙，设置为允许</item>
+    </string-array>
+    <string-array name="app_check_setting_detail_zte">
+        <item>掌心管家</item>
+        <item>安全保护</item>
+        <item>敏感权限监控</item>
+        <item>软件监控</item>
+        <item>WiFi万能钥匙</item>
+        <item>获取定位信息，设置为允许</item>
+    </string-array>
+    <string-array name="adone_wifilist">
+        <item>关注&amp;lt;a href=http://e.weibo.com/wifikey>WiFi万能钥匙新浪微博&amp;lt;/a></item>
+        <item>用WiFi万能钥匙，无限你的无线</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item>WiFi已打开</item>
+        <item>正在扫描附近热点...</item>
+        <item>正在连接...</item>
+        <item>正在进行身份验证...</item>
+        <item>正在获取 IP 地址...</item>
+        <item>WiFi已连接</item>
+        <item>WiFi暂停中...</item>
+        <item>正在断开连接...</item>
+        <item>已断开连接</item>
+        <item>连接失败</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>正在扫描附近热点...</item>
+        <item>正在连接 %1$s...</item>
+        <item>正在进行身份验证...</item>
+        <item>正在从 %1$s 获取 IP 地址...</item>
+        <item>已连接 %1$s</item>
+        <item>暂停中</item>
+        <item>正在从 %1$s 断开...</item>
+        <item>已从 %1$s 断开</item>
+        <item>连接失败</item>
+    </string-array>
+    <string-array name="wifi_security">
+        <item>开放</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+    </string-array>
+    <string-array name="wifi_eap_method">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+        <item>PWD</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>弱</item>
+        <item>一般</item>
+        <item>较强</item>
+        <item>强</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>无</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="traffic_sort_item">
+        <item>按名称排序</item>
+        <item>按下载排序</item>
+        <item>按上传排序</item>
+    </string-array>
+    <string-array name="traffic_apptype_item">
+        <item>全部应用</item>
+        <item>系统预装应用</item>
+        <item>用户安装应用</item>
+    </string-array>
+    <string-array name="wifi_sec_state_name">
+        <item>低</item>
+        <item>中</item>
+        <item>高</item>
+        <item>高</item>
+    </string-array>
+    <string-array name="wifi_sec_state_color">
+        <item>\#c11507</item>
+        <item>\#f88a00</item>
+        <item>\#069238</item>
+        <item>\#069238</item>
+    </string-array>
+    <string-array name="wifi_sec_state_detail">
+        <item>您当前使用的是开放网络</item>
+        <item>热点加密方式：WEP</item>
+        <item>热点加密方式：WPA/WPA2 PSK</item>
+        <item>热点加密方式：WPA/WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>@string/wifi_security_none</item>
+        <item>@string/wifi_security_wpa</item>
+        <item>@string/wifi_security_wpa2</item>
+    </string-array>
+    <string-array name="wifi_status_on_notification_icon">
+        <item></item>
+        <item>正在扫描附近热点...</item>
+        <item>正在连接到 %1$s...</item>
+        <item>正在进行身份验证...</item>
+        <item>正在从 %1$s 获取 IP 地址...</item>
+        <item>已连接 %1$s</item>
+        <item>已暂停</item>
+        <item>正在从 %1$s 断开...</item>
+        <item>已断开</item>
+        <item>失败</item>
+    </string-array>
+    <string-array name="wifi_signal_on_notification_icon">
+        <item>信号: 弱</item>
+        <item>信号: 一般</item>
+        <item>信号: 较强</item>
+        <item>信号: 强</item>
+    </string-array>
+    <string-array name="wifi_eap_entries">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+        <item>PWD</item>
+    </string-array>
+    <string-array name="pref_act_power_close_wifi_per_blackscreen_title">
+        <item>禁用</item>
+        <item>5分钟</item>
+        <item>10分钟</item>
+        <item>30分钟</item>
+    </string-array>
+    <string-array name="pref_act_power_close_wifi_per_blackscreen_summary">
+        <item>已禁用</item>
+        <item>5分钟</item>
+        <item>10分钟</item>
+        <item>30分钟</item>
+    </string-array>
+    <string-array name="pref_act_power_close_wifi_per_blackscreen_value">
+        <item>0</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>1800000</item>
+    </string-array>
+    <string-array name="pref_checkbox_value">
+        <item>已禁用</item>
+        <item>已启用</item>
+    </string-array>
+    <string-array name="boolean_value">
+        <item>是</item>
+        <item>否</item>
+    </string-array>
+    <string-array name="pref_act_power_power_save_by_one_key_summary">
+        <item>已激活，其他选项不可调整</item>
+        <item>已停止，可以调整其他选项</item>
+    </string-array>
+    <string-array name="pref_act_power_power_save_in_charge_key_summary">
+        <item>是，充电时关闭WiFi项也起作用</item>
+        <item>否，充电时忽略关闭WiFi选项</item>
+    </string-array>
+    <string-array name="pref_act_power_saving_strategy_on_notification">
+        <item>省电策略:未开启</item>
+        <item>省电策略:省心</item>
+        <item>省电策略:极限</item>
+        <item>省电策略:自定义</item>
+    </string-array>
+    <string-array name="pref_act_power_saving_strategy_title">
+        <item>不开启</item>
+        <item>省心省电</item>
+        <item>极限省电</item>
+        <item>自定义规则</item>
+    </string-array>
+    <string-array name="pref_act_power_saving_strategy_sumary">
+        <item>未开启（不自动关闭WiFi）</item>
+        <item>省心省电（深夜自动关闭WiFi）</item>
+        <item>极限省电（合理自动关闭WiFi）</item>
+        <item>自定义规则</item>
+    </string-array>
+    <string-array name="pref_act_power_saving_strategy_value">
+        <item>never</item>
+        <item>bizman</item>
+        <item>user</item>
+        <item>customize</item>
+    </string-array>
+    <string-array name="hours_of_day_title">
+        <item>0:00</item>
+        <item>1:00</item>
+        <item>2:00</item>
+        <item>3:00</item>
+        <item>4:00</item>
+        <item>5:00</item>
+        <item>6:00</item>
+        <item>7:00</item>
+        <item>8:00</item>
+        <item>9:00</item>
+        <item>10:00</item>
+        <item>11:00</item>
+        <item>12:00</item>
+        <item>13:00</item>
+        <item>14:00</item>
+        <item>15:00</item>
+        <item>16:00</item>
+        <item>17:00</item>
+        <item>18:00</item>
+        <item>19:00</item>
+        <item>20:00</item>
+        <item>21:00</item>
+        <item>22:00</item>
+        <item>23:00</item>
+    </string-array>
+    <string-array name="hours_of_day_value">
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+    </string-array>
+    <string-array name="pre_time_unit">
+        <item>秒前</item>
+        <item>分钟前</item>
+        <item>小时前</item>
+    </string-array>
+    <string-array name="act_top_n_trying_count">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+    </string-array>
+    <string-array name="map_apinfo_dialog_content">
+        <item>热点名称：%1$s</item>
+        <item>安全性：%1$s</item>
+        <item>信号强度：%1$s</item>
+        <item>信号频率：%1$sMHz</item>
+        <item>连接速度：%1$sMbps</item>
+        <item>IP地址：%1$s</item>
+    </string-array>
+    <string-array name="groups">
+        <item>可解锁</item>
+        <item>未加密</item>
+        <item>待解锁</item>
+    </string-array>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/wrap_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lantern.photochoose.widget.SquareImageView android:id="@id/imageview_photo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+    <View android:id="@id/mask" android:background="#88000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="top|right|center" android:id="@id/checkmark" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="5.5dip" android:layout_marginRight="5.5dip" android:src="@drawable/settings_photo_btn_select_selector" />
+</FrameLayout>

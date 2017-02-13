@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/settings_invite_pop_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/settings_native_text_title" android:textColor="@color/settings_main" android:gravity="center_vertical" android:paddingLeft="24.0dip" android:layout_width="fill_parent" android:layout_height="54.0dip" android:text="@string/settings_browser_choosertitle_sharevia_title" />
+    <View android:background="@color/settings_main" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="12.0dip" />
+    <GridView android:gravity="center" android:id="@id/settings_invite_grid_view" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:horizontalSpacing="14.0dip" android:verticalSpacing="2.0dip" android:stretchMode="columnWidth" android:numColumns="4" />
+    <View android:background="@color/settings_rightdark_line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="12.0dip" />
+    <Button android:textSize="@dimen/settings_native_text_title" android:textColor="@color/settings_important_text" android:gravity="center" android:id="@id/settings_invite_cancel" android:background="@drawable/framework_dialog_btn_bg" android:layout_width="fill_parent" android:layout_height="54.0dip" android:text="@string/settings_invite_cancel_title" />
+</LinearLayout>

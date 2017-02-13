@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/settings_permission_checking_no_list_layout" android:paddingTop="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/settings_permission_setting_location_sign" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff444444" android:paddingLeft="20.0dip" android:paddingTop="20.0dip" android:paddingRight="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setting_check_bottom" />
+    </LinearLayout>
+    <ScrollView android:id="@id/settings_permission_checking_scrollview" android:visibility="gone" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <WebView android:id="@id/settings_permission_checking_webview_html" android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/settings_permission_checking_linerarlayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/settings_permission_checking_ico" android:paddingTop="20.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/settings_permission_setting_location_sign" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff444444" android:gravity="center" android:id="@id/check_setting_dec_tv" android:paddingLeft="20.0dip" android:paddingTop="20.0dip" android:paddingRight="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setting_check_title" />
+        <LinearLayout android:orientation="vertical" android:id="@id/settings_permisson_is_has_systerm_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="#ff444444" android:gravity="left|center" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/setting_check_has_limit_for_sys" />
+            <ImageView android:background="@color/line_cache_olor_hint" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/setting_permission_sys_app_layout" android:background="@drawable/setting_permission_select_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/setting_permission_check_app_ico" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" />
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="60.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:ellipsize="end" android:gravity="left|center" android:id="@id/setting_permission__app_name" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="16.0dip" android:text="" android:singleLine="true" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/settings_permisson_no_limit_lay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:background="@color/line_cache_olor_hint" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff444444" android:gravity="left|center" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/setting_check_other_setting" />
+        </LinearLayout>
+        <ImageView android:background="@color/line_cache_olor_hint" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <ListView android:id="@id/check_setting_lv" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/settings_permission_check_item_bg" android:divider="@null" android:layout_below="@id/check_setting_dec_line" />
+        <RelativeLayout android:layout_gravity="center" android:id="@id/check_setting_all_rl" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/down_item_name" android:gravity="center_vertical" android:id="@id/check_setting_all_tv" android:background="@drawable/settings_permission_check_item_bg" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/pref_item_height" android:text="@string/setting_check_all" style="@style/sliding_menu_text" />
+            <ImageView android:paddingRight="15.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/settings_permission_more_pref_left" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/check_setting_all_line" android:background="@color/line_cache_olor_hint" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/check_setting_all_rl" />
+        <TextView android:textSize="16.0sp" android:background="@drawable/settings_permission_check_item_bg" android:padding="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="如果以上帮助无法解决您的问题，请点击这里查看我们的帮助或联系客服：8000091775" android:layout_below="@id/check_setting_all_line" />
+    </LinearLayout>
+</RelativeLayout>

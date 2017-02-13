@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/settings_pref_settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory />
+    <Preference android:title="@string/settings_pref_app_settings_title" android:key="settings_pref_settings" android:fragment="com.lantern.settings.ui.SettingsFragment" />
+    <Preference android:title="@string/settings_pref_set_default_title" android:key="settings_pref_set_default" android:fragment="com.lantern.settings.ui.DefaultSettingsFragment" />
+    <PreferenceCategory />
+    <Preference android:title="@string/settings_pref_invite_title" android:key="settings_pref_invite" />
+    <ValuePreference android:title="@string/settings_pref_became_ap_owner" android:key="settings_pref_became_ap_owner" />
+    <ValuePreference android:title="@string/settings_pref_shared_ap_title" android:key="settings_pref_shared_ap" />
+    <PreferenceCategory />
+    <Preference android:title="@string/settings_pref_grade_title" android:key="settings_pref_grade" />
+    <Preference android:title="@string/settings_pref_feedback_title2" android:key="settings_pref_feedback" />
+    <ValuePreference android:title="@string/settings_pref_ver_check_title" android:key="settings_pref_ver_check" />
+    <ValuePreference android:title="@string/settings_pref_about_title" android:key="settings_pref_about" android:fragment="com.lantern.settings.ui.AboutFragment" />
+    <PreferenceCategory android:key="settings_pref_exit_category">
+        <com.lantern.settings.ui.ExitPreference android:title="@string/settings_pref_logout_title" android:key="settings_pref_exit" />
+    </PreferenceCategory>
+</PreferenceScreen>

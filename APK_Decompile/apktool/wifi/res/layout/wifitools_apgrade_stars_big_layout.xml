@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/framework_white_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RatingBar android:id="@id/big_star_ratingbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip" android:numStars="5" android:rating="0.0" android:layout_centerHorizontal="true" style="@style/apgrade_ratingbar" />
+    <TextView android:textSize="13.0sp" android:textColor="#fff8c118" android:gravity="center_horizontal" android:id="@id/big_star_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/big_star_ratingbar" />
+</RelativeLayout>

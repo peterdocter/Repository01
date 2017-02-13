@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dots="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/divider">
+        <TextView android:textSize="18.0sp" android:gravity="center" android:orientation="vertical" android:id="@id/tv_network_ssid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        <RelativeLayout android:id="@id/speedProgressBarlayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wifispeed_process" android:layout_centerInParent="true" />
+            <com.lantern.wifitools.speedtest.SpeedProgressBar android:id="@id/speedProgressBar" android:visibility="visible" android:layout_width="300.0dip" android:layout_height="300.0dip" android:layout_centerInParent="true" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wifispeed_meter" android:layout_centerInParent="true" />
+            <com.lantern.wifitools.speedtest.SpeedTestPoint android:id="@id/speedPoint" android:visibility="gone" android:layout_width="300.0dip" android:layout_height="300.0dip" android:layout_centerInParent="true" />
+            <LinearLayout android:orientation="vertical" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <com.lantern.wifitools.view.CustomTextView android:textSize="50.0sp" android:textColor="@color/exam_black" android:gravity="center" android:id="@id/tv_network_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <com.lantern.wifitools.view.CustomTextView android:textSize="15.0sp" android:textColor="@color/exam_black" android:layout_gravity="center_horizontal" android:id="@id/unit" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <com.lantern.wifitools.view.AnimTextView android:textSize="24.0sp" android:textColor="#ff666666" android:id="@id/ping" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/speed_ping_text" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="15.0sp" android:gravity="center" android:id="@id/tv_network_test_btn" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/speed_test_restart" />
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="@color/exam_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_above="@id/bottom_view" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/bottom_view" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/delay_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textColor="@color/exam_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/speed_delay" />
+                <com.lantern.wifitools.view.LoadingView android:id="@id/delay_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textColor="@color/exam_gray" android:id="@id/delay_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+            </LinearLayout>
+            <View android:background="@color/exam_divider" android:layout_width="1.0px" android:layout_height="wrap_content" android:layout_alignTop="@id/delay_view" android:layout_alignBottom="@id/delay_view" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/max_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textColor="@color/exam_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/speed_max" />
+                <com.lantern.wifitools.view.LoadingView android:id="@id/max_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textColor="@color/exam_gray" android:id="@id/max_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+            </LinearLayout>
+            <View android:background="@color/exam_divider" android:layout_width="1.0px" android:layout_height="wrap_content" android:layout_alignTop="@id/max_view" android:layout_alignBottom="@id/max_view" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textColor="@color/exam_gray" android:id="@id/min" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/speed_min" />
+            <com.lantern.wifitools.view.LoadingView android:id="@id/min_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textColor="@color/exam_gray" android:id="@id/min_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

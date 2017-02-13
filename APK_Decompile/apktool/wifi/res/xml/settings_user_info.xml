@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/settings_pref_settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory />
+    <com.lantern.settings.widget.UserInfoHeaderPreference android:icon="@drawable/settings_account_avtar" android:title="@string/settings_user_info_avatar" android:key="user_info_avatar" />
+    <PreferenceCategory />
+    <ValuePreference android:title="@string/settings_user_info_mobile" android:selectable="false" android:key="user_info_mobile" />
+    <ValuePreference android:title="@string/settings_user_info_nickname" android:key="user_info_nickname" />
+    <ValuePreference android:title="@string/settings_user_info_gender" android:key="user_info_gender" />
+</PreferenceScreen>

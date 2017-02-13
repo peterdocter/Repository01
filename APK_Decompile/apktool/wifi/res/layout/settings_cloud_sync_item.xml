@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:background="@drawable/settings_pref_secury_item_bg" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/pref_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/down_group_title" android:ellipsize="marquee" android:layout_gravity="center_vertical" android:id="@id/settings_cloud_sync_item_ssid" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/down_group_del_title" android:layout_gravity="right" android:id="@id/setings_cloud_sync_item_del" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_cloud_sync_item_del_title" android:singleLine="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

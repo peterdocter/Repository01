@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="#fff5f5f5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/setting_permission_complete_ico" android:background="@drawable/settings_permission_check_setting_changed_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="18.0sp" android:textColor="#ff999999" android:id="@id/setting_permission_complete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/check_setting_changed_repair" />
+    <TextView android:textSize="17.0sp" android:textColor="#ff999999" android:gravity="center" android:id="@id/setting_permission_msg" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/check_setting_changed_complete_configuration" />
+    <TextView android:textSize="16.0sp" android:textColor="#ffa7a7a7" android:id="@id/btn_godetal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="33.0dip" android:text="@string/check_setting_changed_view_tutorial" />
+    <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/btn_changed" android:background="@drawable/setting_permission_background" android:layout_width="156.0dip" android:layout_height="40.0dip" android:layout_marginTop="20.0dip" android:text="@string/check_setting_changed_repaired" />
+</LinearLayout>

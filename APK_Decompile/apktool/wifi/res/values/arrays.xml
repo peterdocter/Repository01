@@ -1,0 +1,872 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="framework_weekday">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+    <string-array name="country_code_names">
+        <item>TW:Taiwan, Province of China</item>
+    </string-array>
+    <string-array name="time_zone_country_code">
+        <item>Europe/Andorra,AD</item>
+        <item>Asia/Dubai,AE</item>
+        <item>Asia/Kabul,AF</item>
+        <item>America/Antigua,AG</item>
+        <item>America/Anguilla,AI</item>
+        <item>Europe/Tirane,AL</item>
+        <item>Asia/Yerevan,AM</item>
+        <item>Africa/Luanda,AO</item>
+        <item>Antarctica/McMurdo,AQ</item>
+        <item>Antarctica/Rothera,AQ</item>
+        <item>Antarctica/Palmer,AQ</item>
+        <item>Antarctica/Mawson,AQ</item>
+        <item>Antarctica/Davis,AQ</item>
+        <item>Antarctica/Casey,AQ</item>
+        <item>Antarctica/Vostok,AQ</item>
+        <item>Antarctica/DumontDUrville,AQ</item>
+        <item>Antarctica/Syowa,AQ</item>
+        <item>Antarctica/Troll,AQ</item>
+        <item>America/Argentina/Buenos_Aires,AR</item>
+        <item>America/Argentina/Cordoba,AR</item>
+        <item>America/Argentina/Salta,AR</item>
+        <item>America/Argentina/Jujuy,AR</item>
+        <item>America/Argentina/Tucuman,AR</item>
+        <item>America/Argentina/Catamarca,AR</item>
+        <item>America/Argentina/La_Rioja,AR</item>
+        <item>America/Argentina/San_Juan,AR</item>
+        <item>America/Argentina/Mendoza,AR</item>
+        <item>America/Argentina/San_Luis,AR</item>
+        <item>America/Argentina/Rio_Gallegos,AR</item>
+        <item>America/Argentina/Ushuaia,AR</item>
+        <item>Pacific/Pago_Pago,AS</item>
+        <item>Europe/Vienna,AT</item>
+        <item>Australia/Lord_Howe,AU</item>
+        <item>Antarctica/Macquarie,AU</item>
+        <item>Australia/Hobart,AU</item>
+        <item>Australia/Currie,AU</item>
+        <item>Australia/Melbourne,AU</item>
+        <item>Australia/Sydney,AU</item>
+        <item>Australia/Broken_Hill,AU</item>
+        <item>Australia/Brisbane,AU</item>
+        <item>Australia/Lindeman,AU</item>
+        <item>Australia/Adelaide,AU</item>
+        <item>Australia/Darwin,AU</item>
+        <item>Australia/Perth,AU</item>
+        <item>Australia/Eucla,AU</item>
+        <item>America/Aruba,AW</item>
+        <item>Europe/Mariehamn,AX</item>
+        <item>Asia/Baku,AZ</item>
+        <item>Europe/Sarajevo,BA</item>
+        <item>America/Barbados,BB</item>
+        <item>Asia/Dhaka,BD</item>
+        <item>Europe/Brussels,BE</item>
+        <item>Africa/Ouagadougou,BF</item>
+        <item>Europe/Sofia,BG</item>
+        <item>Asia/Bahrain,BH</item>
+        <item>Africa/Bujumbura,BI</item>
+        <item>Africa/Porto-Novo,BJ</item>
+        <item>America/St_Barthelemy,BL</item>
+        <item>Atlantic/Bermuda,BM</item>
+        <item>Asia/Brunei,BN</item>
+        <item>America/La_Paz,BO</item>
+        <item>America/Kralendijk,BQ</item>
+        <item>America/Noronha,BR</item>
+        <item>America/Belem,BR</item>
+        <item>America/Fortaleza,BR</item>
+        <item>America/Recife,BR</item>
+        <item>America/Araguaina,BR</item>
+        <item>America/Maceio,BR</item>
+        <item>America/Bahia,BR</item>
+        <item>America/Sao_Paulo,BR</item>
+        <item>America/Campo_Grande,BR</item>
+        <item>America/Cuiaba,BR</item>
+        <item>America/Santarem,BR</item>
+        <item>America/Porto_Velho,BR</item>
+        <item>America/Boa_Vista,BR</item>
+        <item>America/Manaus,BR</item>
+        <item>America/Eirunepe,BR</item>
+        <item>America/Rio_Branco,BR</item>
+        <item>America/Nassau,BS</item>
+        <item>Asia/Thimphu,BT</item>
+        <item>Africa/Gaborone,BW</item>
+        <item>Europe/Minsk,BY</item>
+        <item>America/Belize,BZ</item>
+        <item>America/St_Johns,CA</item>
+        <item>America/Halifax,CA</item>
+        <item>America/Glace_Bay,CA</item>
+        <item>America/Moncton,CA</item>
+        <item>America/Goose_Bay,CA</item>
+        <item>America/Blanc-Sablon,CA</item>
+        <item>America/Toronto,CA</item>
+        <item>America/Nipigon,CA</item>
+        <item>America/Thunder_Bay,CA</item>
+        <item>America/Iqaluit,CA</item>
+        <item>America/Pangnirtung,CA</item>
+        <item>America/Resolute,CA</item>
+        <item>America/Atikokan,CA</item>
+        <item>America/Rankin_Inlet,CA</item>
+        <item>America/Winnipeg,CA</item>
+        <item>America/Rainy_River,CA</item>
+        <item>America/Regina,CA</item>
+        <item>America/Swift_Current,CA</item>
+        <item>America/Edmonton,CA</item>
+        <item>America/Cambridge_Bay,CA</item>
+        <item>America/Yellowknife,CA</item>
+        <item>America/Inuvik,CA</item>
+        <item>America/Creston,CA</item>
+        <item>America/Dawson_Creek,CA</item>
+        <item>America/Vancouver,CA</item>
+        <item>America/Whitehorse,CA</item>
+        <item>America/Dawson,CA</item>
+        <item>Indian/Cocos,CC</item>
+        <item>Africa/Kinshasa,CD</item>
+        <item>Africa/Lubumbashi,CD</item>
+        <item>Africa/Bangui,CF</item>
+        <item>Africa/Brazzaville,CG</item>
+        <item>Europe/Zurich,CH</item>
+        <item>Africa/Abidjan,CI</item>
+        <item>Pacific/Rarotonga,CK</item>
+        <item>America/Santiago,CL</item>
+        <item>Pacific/Easter,CL</item>
+        <item>Africa/Douala,CM</item>
+        <item>Asia/Shanghai,CN</item>
+        <item>Asia/Harbin,CN</item>
+        <item>Asia/Chongqing,CN</item>
+        <item>Asia/Urumqi,CN</item>
+        <item>Asia/Kashgar,CN</item>
+        <item>America/Bogota,CO</item>
+        <item>America/Costa_Rica,CR</item>
+        <item>America/Havana,CU</item>
+        <item>Atlantic/Cape_Verde,CV</item>
+        <item>America/Curacao,CW</item>
+        <item>Indian/Christmas,CX</item>
+        <item>Asia/Nicosia,CY</item>
+        <item>Europe/Prague,CZ</item>
+        <item>Europe/Berlin,DE</item>
+        <item>Europe/Busingen,DE</item>
+        <item>Africa/Djibouti,DJ</item>
+        <item>Europe/Copenhagen,DK</item>
+        <item>America/Dominica,DM</item>
+        <item>America/Santo_Domingo,DO</item>
+        <item>Africa/Algiers,DZ</item>
+        <item>America/Guayaquil,EC</item>
+        <item>Pacific/Galapagos,EC</item>
+        <item>Europe/Tallinn,EE</item>
+        <item>Africa/Cairo,EG</item>
+        <item>Africa/El_Aaiun,EH</item>
+        <item>Africa/Asmara,ER</item>
+        <item>Europe/Madrid,ES</item>
+        <item>Africa/Ceuta,ES</item>
+        <item>Atlantic/Canary,ES</item>
+        <item>Africa/Addis_Ababa,ET</item>
+        <item>Europe/Helsinki,FI</item>
+        <item>Pacific/Fiji,FJ</item>
+        <item>Atlantic/Stanley,FK</item>
+        <item>Pacific/Chuuk,FM</item>
+        <item>Pacific/Pohnpei,FM</item>
+        <item>Pacific/Kosrae,FM</item>
+        <item>Atlantic/Faroe,FO</item>
+        <item>Europe/Paris,FR</item>
+        <item>Africa/Libreville,GA</item>
+        <item>Europe/London,GB</item>
+        <item>America/Grenada,GD</item>
+        <item>Asia/Tbilisi,GE</item>
+        <item>America/Cayenne,GF</item>
+        <item>Europe/Guernsey,GG</item>
+        <item>Africa/Accra,GH</item>
+        <item>Europe/Gibraltar,GI</item>
+        <item>America/Godthab,GL</item>
+        <item>America/Danmarkshavn,GL</item>
+        <item>America/Scoresbysund,GL</item>
+        <item>America/Thule,GL</item>
+        <item>Africa/Banjul,GM</item>
+        <item>Africa/Conakry,GN</item>
+        <item>America/Guadeloupe,GP</item>
+        <item>Africa/Malabo,GQ</item>
+        <item>Europe/Athens,GR</item>
+        <item>Atlantic/South_Georgia,GS</item>
+        <item>America/Guatemala,GT</item>
+        <item>Pacific/Guam,GU</item>
+        <item>Africa/Bissau,GW</item>
+        <item>America/Guyana,GY</item>
+        <item>Asia/Hong_Kong,HK</item>
+        <item>America/Tegucigalpa,HN</item>
+        <item>Europe/Zagreb,HR</item>
+        <item>America/Port-au-Prince,HT</item>
+        <item>Europe/Budapest,HU</item>
+        <item>Asia/Jakarta,ID</item>
+        <item>Asia/Pontianak,ID</item>
+        <item>Asia/Makassar,ID</item>
+        <item>Asia/Jayapura,ID</item>
+        <item>Europe/Dublin,IE</item>
+        <item>Asia/Jerusalem,IL</item>
+        <item>Europe/Isle_of_Man,IM</item>
+        <item>Asia/Kolkata,IN</item>
+        <item>Indian/Chagos,IO</item>
+        <item>Asia/Baghdad,IQ</item>
+        <item>Asia/Tehran,IR</item>
+        <item>Atlantic/Reykjavik,IS</item>
+        <item>Europe/Rome,IT</item>
+        <item>Europe/Jersey,JE</item>
+        <item>America/Jamaica,JM</item>
+        <item>Asia/Amman,JO</item>
+        <item>Asia/Tokyo,JP</item>
+        <item>Africa/Nairobi,KE</item>
+        <item>Asia/Bishkek,KG</item>
+        <item>Asia/Phnom_Penh,KH</item>
+        <item>Pacific/Tarawa,KI</item>
+        <item>Pacific/Enderbury,KI</item>
+        <item>Pacific/Kiritimati,KI</item>
+        <item>Indian/Comoro,KM</item>
+        <item>America/St_Kitts,KN</item>
+        <item>Asia/Pyongyang,KP</item>
+        <item>Asia/Seoul,KR</item>
+        <item>Asia/Kuwait,KW</item>
+        <item>America/Cayman,KY</item>
+        <item>Asia/Almaty,KZ</item>
+        <item>Asia/Qyzylorda,KZ</item>
+        <item>Asia/Aqtobe,KZ</item>
+        <item>Asia/Aqtau,KZ</item>
+        <item>Asia/Oral,KZ</item>
+        <item>Asia/Vientiane,LA</item>
+        <item>Asia/Beirut,LB</item>
+        <item>America/St_Lucia,LC</item>
+        <item>Europe/Vaduz,LI</item>
+        <item>Asia/Colombo,LK</item>
+        <item>Africa/Monrovia,LR</item>
+        <item>Africa/Maseru,LS</item>
+        <item>Europe/Vilnius,LT</item>
+        <item>Europe/Luxembourg,LU</item>
+        <item>Europe/Riga,LV</item>
+        <item>Africa/Tripoli,LY</item>
+        <item>Africa/Casablanca,MA</item>
+        <item>Europe/Monaco,MC</item>
+        <item>Europe/Chisinau,MD</item>
+        <item>Europe/Podgorica,ME</item>
+        <item>America/Marigot,MF</item>
+        <item>Indian/Antananarivo,MG</item>
+        <item>Pacific/Majuro,MH</item>
+        <item>Pacific/Kwajalein,MH</item>
+        <item>Europe/Skopje,MK</item>
+        <item>Africa/Bamako,ML</item>
+        <item>Asia/Rangoon,MM</item>
+        <item>Asia/Ulaanbaatar,MN</item>
+        <item>Asia/Hovd,MN</item>
+        <item>Asia/Choibalsan,MN</item>
+        <item>Asia/Macau,MO</item>
+        <item>Pacific/Saipan,MP</item>
+        <item>America/Martinique,MQ</item>
+        <item>Africa/Nouakchott,MR</item>
+        <item>America/Montserrat,MS</item>
+        <item>Europe/Malta,MT</item>
+        <item>Indian/Mauritius,MU</item>
+        <item>Indian/Maldives,MV</item>
+        <item>Africa/Blantyre,MW</item>
+        <item>America/Mexico_City,MX</item>
+        <item>America/Cancun,MX</item>
+        <item>America/Merida,MX</item>
+        <item>America/Monterrey,MX</item>
+        <item>America/Matamoros,MX</item>
+        <item>America/Mazatlan,MX</item>
+        <item>America/Chihuahua,MX</item>
+        <item>America/Ojinaga,MX</item>
+        <item>America/Hermosillo,MX</item>
+        <item>America/Tijuana,MX</item>
+        <item>America/Santa_Isabel,MX</item>
+        <item>America/Bahia_Banderas,MX</item>
+        <item>Asia/Kuala_Lumpur,MY</item>
+        <item>Asia/Kuching,MY</item>
+        <item>Africa/Maputo,MZ</item>
+        <item>Africa/Windhoek,NA</item>
+        <item>Pacific/Noumea,NC</item>
+        <item>Africa/Niamey,NE</item>
+        <item>Pacific/Norfolk,NF</item>
+        <item>Africa/Lagos,NG</item>
+        <item>America/Managua,NI</item>
+        <item>Europe/Amsterdam,NL</item>
+        <item>Europe/Oslo,NO</item>
+        <item>Asia/Kathmandu,NP</item>
+        <item>Pacific/Nauru,NR</item>
+        <item>Pacific/Niue,NU</item>
+        <item>Pacific/Auckland,NZ</item>
+        <item>Pacific/Chatham,NZ</item>
+        <item>Asia/Muscat,OM</item>
+        <item>America/Panama,PA</item>
+        <item>America/Lima,PE</item>
+        <item>Pacific/Tahiti,PF</item>
+        <item>Pacific/Marquesas,PF</item>
+        <item>Pacific/Gambier,PF</item>
+        <item>Pacific/Port_Moresby,PG</item>
+        <item>Asia/Manila,PH</item>
+        <item>Asia/Karachi,PK</item>
+        <item>Europe/Warsaw,PL</item>
+        <item>America/Miquelon,PM</item>
+        <item>Pacific/Pitcairn,PN</item>
+        <item>America/Puerto_Rico,PR</item>
+        <item>Asia/Gaza,PS</item>
+        <item>Asia/Hebron,PS</item>
+        <item>Europe/Lisbon,PT</item>
+        <item>Atlantic/Madeira,PT</item>
+        <item>Atlantic/Azores,PT</item>
+        <item>Pacific/Palau,PW</item>
+        <item>America/Asuncion,PY</item>
+        <item>Asia/Qatar,QA</item>
+        <item>Indian/Reunion,RE</item>
+        <item>Europe/Bucharest,RO</item>
+        <item>Europe/Belgrade,RS</item>
+        <item>Europe/Kaliningrad,RU</item>
+        <item>Europe/Moscow,RU</item>
+        <item>Europe/Volgograd,RU</item>
+        <item>Europe/Samara,RU</item>
+        <item>Europe/Simferopol,RU</item>
+        <item>Asia/Yekaterinburg,RU</item>
+        <item>Asia/Omsk,RU</item>
+        <item>Asia/Novosibirsk,RU</item>
+        <item>Asia/Novokuznetsk,RU</item>
+        <item>Asia/Krasnoyarsk,RU</item>
+        <item>Asia/Irkutsk,RU</item>
+        <item>Asia/Yakutsk,RU</item>
+        <item>Asia/Khandyga,RU</item>
+        <item>Asia/Vladivostok,RU</item>
+        <item>Asia/Sakhalin,RU</item>
+        <item>Asia/Ust-Nera,RU</item>
+        <item>Asia/Magadan,RU</item>
+        <item>Asia/Kamchatka,RU</item>
+        <item>Asia/Anadyr,RU</item>
+        <item>Africa/Kigali,RW</item>
+        <item>Asia/Riyadh,SA</item>
+        <item>Pacific/Guadalcanal,SB</item>
+        <item>Indian/Mahe,SC</item>
+        <item>Africa/Khartoum,SD</item>
+        <item>Europe/Stockholm,SE</item>
+        <item>Asia/Singapore,SG</item>
+        <item>Atlantic/St_Helena,SH</item>
+        <item>Europe/Ljubljana,SI</item>
+        <item>Arctic/Longyearbyen,SJ</item>
+        <item>Europe/Bratislava,SK</item>
+        <item>Africa/Freetown,SL</item>
+        <item>Europe/San_Marino,SM</item>
+        <item>Africa/Dakar,SN</item>
+        <item>Africa/Mogadishu,SO</item>
+        <item>America/Paramaribo,SR</item>
+        <item>Africa/Juba,SS</item>
+        <item>Africa/Sao_Tome,ST</item>
+        <item>America/El_Salvador,SV</item>
+        <item>America/Lower_Princes,SX</item>
+        <item>Asia/Damascus,SY</item>
+        <item>Africa/Mbabane,SZ</item>
+        <item>America/Grand_Turk,TC</item>
+        <item>Africa/Ndjamena,TD</item>
+        <item>Indian/Kerguelen,TF</item>
+        <item>Africa/Lome,TG</item>
+        <item>Asia/Bangkok,TH</item>
+        <item>Asia/Dushanbe,TJ</item>
+        <item>Pacific/Fakaofo,TK</item>
+        <item>Asia/Dili,TL</item>
+        <item>Asia/Ashgabat,TM</item>
+        <item>Africa/Tunis,TN</item>
+        <item>Pacific/Tongatapu,TO</item>
+        <item>Europe/Istanbul,TR</item>
+        <item>America/Port_of_Spain,TT</item>
+        <item>Pacific/Funafuti,TV</item>
+        <item>Asia/Taipei,TW</item>
+        <item>Africa/Dar_es_Salaam,TZ</item>
+        <item>Europe/Kiev,UA</item>
+        <item>Europe/Uzhgorod,UA</item>
+        <item>Europe/Zaporozhye,UA</item>
+        <item>Africa/Kampala,UG</item>
+        <item>Pacific/Johnston,UM</item>
+        <item>Pacific/Midway,UM</item>
+        <item>Pacific/Wake,UM</item>
+        <item>America/New_York,US</item>
+        <item>America/Detroit,US</item>
+        <item>America/Kentucky/Louisville,US</item>
+        <item>America/Kentucky/Monticello,US</item>
+        <item>America/Indiana/Indianapolis,US</item>
+        <item>America/Indiana/Vincennes,US</item>
+        <item>America/Indiana/Winamac,US</item>
+        <item>America/Indiana/Marengo,US</item>
+        <item>America/Indiana/Petersburg,US</item>
+        <item>America/Indiana/Vevay,US</item>
+        <item>America/Chicago,US</item>
+        <item>America/Indiana/Tell_City,US</item>
+        <item>America/Indiana/Knox,US</item>
+        <item>America/Menominee,US</item>
+        <item>America/North_Dakota/Center,US</item>
+        <item>America/North_Dakota/New_Salem,US</item>
+        <item>America/North_Dakota/Beulah,US</item>
+        <item>America/Denver,US</item>
+        <item>America/Boise,US</item>
+        <item>America/Phoenix,US</item>
+        <item>America/Los_Angeles,US</item>
+        <item>America/Anchorage,US</item>
+        <item>America/Juneau,US</item>
+        <item>America/Sitka,US</item>
+        <item>America/Yakutat,US</item>
+        <item>America/Nome,US</item>
+        <item>America/Adak,US</item>
+        <item>America/Metlakatla,US</item>
+        <item>Pacific/Honolulu,US</item>
+        <item>America/Montevideo,UY</item>
+        <item>Asia/Samarkand,UZ</item>
+        <item>Asia/Tashkent,UZ</item>
+        <item>Europe/Vatican,VA</item>
+        <item>America/St_Vincent,VC</item>
+        <item>America/Caracas,VE</item>
+        <item>America/Tortola,VG</item>
+        <item>America/St_Thomas,VI</item>
+        <item>Asia/Ho_Chi_Minh,VN</item>
+        <item>Pacific/Efate,VU</item>
+        <item>Pacific/Wallis,WF</item>
+        <item>Pacific/Apia,WS</item>
+        <item>Asia/Aden,YE</item>
+        <item>Indian/Mayotte,YT</item>
+        <item>Africa/Johannesburg,ZA</item>
+        <item>Africa/Lusaka,ZM</item>
+        <item>Africa/Harare,ZW</item>
+    </string-array>
+    <string-array name="country_code_hotspot_count">
+        <item>AD:7166</item>
+        <item>AE:1179742</item>
+        <item>AF:79421</item>
+        <item>AG:21490</item>
+        <item>AI:5546</item>
+        <item>AL:80421</item>
+        <item>AM:115891</item>
+        <item>AO:98557</item>
+        <item>AR:1682321</item>
+        <item>AS:1701</item>
+        <item>AT:114721</item>
+        <item>AU:163653</item>
+        <item>AW:15685</item>
+        <item>AX:277</item>
+        <item>AZ:450485</item>
+        <item>BA:225358</item>
+        <item>BB:86925</item>
+        <item>BD:516016</item>
+        <item>BE:418041</item>
+        <item>BF:27167</item>
+        <item>BG:391014</item>
+        <item>BH:84666</item>
+        <item>BI:5636</item>
+        <item>BJ:24415</item>
+        <item>BM:6619</item>
+        <item>BN:53190</item>
+        <item>BO:194725</item>
+        <item>BQ:3174</item>
+        <item>BR:15231197</item>
+        <item>BS:52937</item>
+        <item>BT:8014</item>
+        <item>BW:28477</item>
+        <item>BY:431540</item>
+        <item>BZ:17689</item>
+        <item>CA:552292</item>
+        <item>CD:26344</item>
+        <item>CF:1650</item>
+        <item>CG:13268</item>
+        <item>CH:148451</item>
+        <item>CI:97910</item>
+        <item>CK:483</item>
+        <item>CL:916113</item>
+        <item>CM:51897</item>
+        <item>CN:300000000</item>
+        <item>CO:2301396</item>
+        <item>CR:236888</item>
+        <item>CU:11235</item>
+        <item>CV:8494</item>
+        <item>CW:30291</item>
+        <item>CX:15</item>
+        <item>CY:127804</item>
+        <item>CZ:355617</item>
+        <item>DE:1091796</item>
+        <item>DJ:23536</item>
+        <item>DK:46951</item>
+        <item>DM:10856</item>
+        <item>DO:1047423</item>
+        <item>DZ:1310939</item>
+        <item>EC:1121394</item>
+        <item>EE:42701</item>
+        <item>EG:3400848</item>
+        <item>ER:677</item>
+        <item>ES:1248987</item>
+        <item>ET:74939</item>
+        <item>FI:40439</item>
+        <item>FJ:13595</item>
+        <item>FM:1525</item>
+        <item>FO:1566</item>
+        <item>FR:1224983</item>
+        <item>GA:29802</item>
+        <item>GB:1217120</item>
+        <item>GD:8520</item>
+        <item>GE:245672</item>
+        <item>GF:7734</item>
+        <item>GH:80501</item>
+        <item>GI:2793</item>
+        <item>GL:3138</item>
+        <item>GM:6793</item>
+        <item>GN:47957</item>
+        <item>GP:14641</item>
+        <item>GQ:11525</item>
+        <item>GR:651637</item>
+        <item>GT:373994</item>
+        <item>GU:16150</item>
+        <item>GW:1634</item>
+        <item>GY:35448</item>
+        <item>HK:1414575</item>
+        <item>HN:288933</item>
+        <item>HR:184578</item>
+        <item>HT:37021</item>
+        <item>HU:419434</item>
+        <item>ID:6501098</item>
+        <item>IE:65840</item>
+        <item>IL:433652</item>
+        <item>IM:2146</item>
+        <item>IN:7204806</item>
+        <item>IO:119</item>
+        <item>IQ:1757300</item>
+        <item>IR:1289891</item>
+        <item>IS:10386</item>
+        <item>IT:849797</item>
+        <item>JE:2688</item>
+        <item>JM:201892</item>
+        <item>JO:338243</item>
+        <item>JP:1216653</item>
+        <item>KE:220097</item>
+        <item>KG:113858</item>
+        <item>KH:254262</item>
+        <item>KI:252</item>
+        <item>KM:2043</item>
+        <item>KN:8816</item>
+        <item>KP:7</item>
+        <item>KR:7822556</item>
+        <item>KW:298338</item>
+        <item>KY:10450</item>
+        <item>KZ:1111431</item>
+        <item>LA:146934</item>
+        <item>LB:447251</item>
+        <item>LC:19081</item>
+        <item>LI:726</item>
+        <item>LK:89874</item>
+        <item>LR:13414</item>
+        <item>LS:2684</item>
+        <item>LT:156755</item>
+        <item>LU:28999</item>
+        <item>LV:88441</item>
+        <item>LY:359855</item>
+        <item>MA:1004409</item>
+        <item>MC:1541</item>
+        <item>MD:173669</item>
+        <item>ME:35486</item>
+        <item>MF:1989</item>
+        <item>MG:28063</item>
+        <item>MH:1786</item>
+        <item>MK:69816</item>
+        <item>ML:48445</item>
+        <item>MM:417822</item>
+        <item>MN:94108</item>
+        <item>MO:82417</item>
+        <item>MP:3300</item>
+        <item>MQ:17074</item>
+        <item>MR:74024</item>
+        <item>MS:576</item>
+        <item>MT:61220</item>
+        <item>MU:97977</item>
+        <item>MV:29510</item>
+        <item>MW:4884</item>
+        <item>MX:9297498</item>
+        <item>MY:2705592</item>
+        <item>MZ:29799</item>
+        <item>NA:33179</item>
+        <item>NC:12134</item>
+        <item>NE:49821</item>
+        <item>NF:36</item>
+        <item>NG:482273</item>
+        <item>NI:108775</item>
+        <item>NL:1037423</item>
+        <item>NO:74249</item>
+        <item>NP:499648</item>
+        <item>NR:509</item>
+        <item>NZ:50077</item>
+        <item>OM:258518</item>
+        <item>PA:216315</item>
+        <item>PE:868250</item>
+        <item>PF:10318</item>
+        <item>PG:9132</item>
+        <item>PH:4178646</item>
+        <item>PK:1647890</item>
+        <item>PL:335202</item>
+        <item>PR:191575</item>
+        <item>PS:336159</item>
+        <item>PT:564330</item>
+        <item>PW:899</item>
+        <item>PY:176698</item>
+        <item>QA:331057</item>
+        <item>RE:28021</item>
+        <item>RO:983296</item>
+        <item>RS:570411</item>
+        <item>RU:6199940</item>
+        <item>RW:27260</item>
+        <item>SA:3220510</item>
+        <item>SB:758</item>
+        <item>SC:8242</item>
+        <item>SD:159003</item>
+        <item>SE:201101</item>
+        <item>SG:503879</item>
+        <item>SI:100737</item>
+        <item>SK:136935</item>
+        <item>SL:16128</item>
+        <item>SM:842</item>
+        <item>SN:130835</item>
+        <item>SO:68998</item>
+        <item>SR:74157</item>
+        <item>SS:3669</item>
+        <item>ST:2290</item>
+        <item>SV:313067</item>
+        <item>SX:8716</item>
+        <item>SY:610045</item>
+        <item>SZ:4720</item>
+        <item>TC:6892</item>
+        <item>TD:4408</item>
+        <item>TG:23368</item>
+        <item>TH:6481862</item>
+        <item>TJ:30363</item>
+        <item>TL:3000</item>
+        <item>TM:35872</item>
+        <item>TN:374161</item>
+        <item>TO:695</item>
+        <item>TR:2517464</item>
+        <item>TT:168826</item>
+        <item>TV:55</item>
+        <item>TW:3083630</item>
+        <item>TZ:53433</item>
+        <item>UA:1232876</item>
+        <item>UG:29239</item>
+        <item>US:5846538</item>
+        <item>UY:158597</item>
+        <item>UZ:153562</item>
+        <item>VA:164</item>
+        <item>VC:11438</item>
+        <item>VE:862360</item>
+        <item>VG:3334</item>
+        <item>VI:4537</item>
+        <item>VN:8236504</item>
+        <item>VU:2411</item>
+        <item>WS:682</item>
+        <item>XK:130661</item>
+        <item>YE:271170</item>
+        <item>YT:731</item>
+        <item>ZA:376597</item>
+        <item>ZM:29078</item>
+        <item>ZW:67986</item>
+    </string-array>
+    <string-array name="language_codes">
+        <item>en</item>
+        <item>zh</item>
+    </string-array>
+    <string-array name="language_names">
+        <item>English</item>
+        <item>中文 (简体)</item>
+    </string-array>
+    <string-array name="app_check_setting">
+        <item>com.qihoo360.mobilesafe</item>
+        <item>com.tencent.qqpimsecure</item>
+        <item>cn.opda.a.phonoalbumshoushou</item>
+    </string-array>
+    <string-array name="settings_permission_check_html">
+        <item>settings_permission_check_mi.html</item>
+        <item>settings_permission_check_huawei.html</item>
+        <item>settings_permission_check_samsumg.html</item>
+        <item>settings_permission_check_360.html</item>
+        <item>settings_permission_check_baidu.html</item>
+    </string-array>
+    <string-array name="app_check_setting_detail">
+        <item>app_check_setting_detail_xiaomi</item>
+        <item>app_check_setting_detail_360</item>
+        <item>app_check_setting_detail_baidu</item>
+    </string-array>
+    <string-array name="app_check_setting_detail_xiaomi">
+        <item>system settings</item>
+        <item>All settings</item>
+        <item>Application</item>
+        <item>WiFi Master Key</item>
+        <item>Authority management</item>
+        <item>location,set to allow</item>
+    </string-array>
+    <string-array name="app_check_setting_detail_vivo">
+        <item>i-Manager</item>
+        <item>software management</item>
+        <item>Software rights management</item>
+        <item>WiFi Master Key</item>
+        <item>location,set to allow</item>
+    </string-array>
+    <string-array name="app_check_setting_detail_360">
+        <item>360 mobile guards</item>
+        <item>safety protection</item>
+        <item>Privacy behavior monitoring</item>
+        <item>Privacy rights management software</item>
+        <item>View by software</item>
+        <item>WiFi Master Key</item>
+        <item>Location information,set to allow</item>
+    </string-array>
+    <string-array name="app_check_setting_detail_baidu">
+        <item>Baidu mobile guards</item>
+        <item>Find out more</item>
+        <item>Super model</item>
+        <item>Privacy Rights Management</item>
+        <item>Privacy Permissions</item>
+        <item>All applications</item>
+        <item>WiFi Master Key</item>
+        <item>Get Location,set to allow</item>
+    </string-array>
+    <string-array name="app_check_setting_detail_tencent">
+        <item>Tencent Mobile Manager</item>
+        <item>software management</item>
+        <item>Software rights management</item>
+        <item>WiFi Master Key</item>
+        <item>Access to mobile phone location,set to allow</item>
+    </string-array>
+    <string-array name="app_check_setting_detail_meizu">
+        <item>security center</item>
+        <item>Authority management</item>
+        <item>privacy</item>
+        <item>location</item>
+        <item>WiFi Master Key,set to allow</item>
+    </string-array>
+    <string-array name="app_check_setting_detail_zte">
+        <item>HeartyService</item>
+        <item>safety protection</item>
+        <item>Sensitive access monitoring</item>
+        <item>Software monitoring</item>
+        <item>WiFi Master Key</item>
+        <item>Get Location,set to allow</item>
+    </string-array>
+    <string-array name="adone_wifilist">
+        <item>An apple a day keeps a doctor away</item>
+        <item>PowerSaving in WiFi Assistant is helpful</item>
+    </string-array>
+    <string-array name="failed_item">
+        <item>未检测到ARP异常</item>
+        <item>未检测到DNS异常</item>
+        <item>未检测到SSL中间人攻击</item>
+        <item>WiFi未加密</item>
+        <item>WiFi加密方式强：</item>
+        <item>不能通达服务器</item>
+    </string-array>
+    <string-array name="wifi_security_level">
+        <item>Poor security</item>
+        <item>Safer</item>
+        <item>Security</item>
+        <item>Security</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Scanning…</item>
+        <item>Connecting…</item>
+        <item>Authenticating…</item>
+        <item>Obtaining IP address…</item>
+        <item>Connected</item>
+        <item>Suspended</item>
+        <item>Disconnecting…</item>
+        <item>Disconnected</item>
+        <item>Unsuccessful</item>
+        <item>Blocked</item>
+        <item>Temporarily avoiding poor connection</item>
+        <item>Check captive portal…</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Scanning…</item>
+        <item>Connecting to %1$s…</item>
+        <item>Authenticating with %1$s…</item>
+        <item>Obtaining IP address from %1$s…</item>
+        <item>Connected to %1$s</item>
+        <item>Suspended</item>
+        <item>Disconnecting from %1$s…</item>
+        <item>Disconnected</item>
+        <item>Unsuccessful</item>
+        <item>Blocked</item>
+        <item>Temporarily avoiding poor connection</item>
+        <item>Check captive portal…</item>
+    </string-array>
+    <string-array name="wifi_security">
+        <item>@string/wifi_security_none</item>
+        <item>@string/wifi_security_wep</item>
+        <item>@string/wifi_security_psk_generic</item>
+        <item>@string/wifi_security_eap</item>
+    </string-array>
+    <string-array name="wifi_eap_method">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+        <item>PWD</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Poor</item>
+        <item>Fair</item>
+        <item>Good</item>
+        <item>Excellent</item>
+    </string-array>
+    <string-array name="wifi_peap_phase2_entries">
+        <item>None</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>None</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>Static</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>None</item>
+        <item>Manual</item>
+    </string-array>
+    <string-array name="traffic_sort_item">
+        <item>By Alphabetic order</item>
+        <item>By Download traffic</item>
+        <item>By Upload traffic</item>
+    </string-array>
+    <string-array name="traffic_apptype_item">
+        <item>All applications</item>
+        <item>Pre-installed applications</item>
+        <item>User-installed applications</item>
+    </string-array>
+    <string-array name="wifi_sec_state_name">
+        <item>Low</item>
+        <item>Normal</item>
+        <item>High</item>
+        <item>High</item>
+    </string-array>
+    <string-array name="wifi_sec_state_color">
+        <item>\#c11507</item>
+        <item>\#f88a00</item>
+        <item>\#069238</item>
+        <item>\#069238</item>
+    </string-array>
+    <string-array name="wifi_sec_state_detail">
+        <item>You are using open network</item>
+        <item>Security level: WEP</item>
+        <item>Security level: WPA/WPA2 PSK</item>
+        <item>Security level: WPA/WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>@string/wifi_security_none</item>
+        <item>@string/wifi_security_wpa</item>
+        <item>@string/wifi_security_wpa2</item>
+    </string-array>
+    <string-array name="app_update_intro_array">
+        <item>Upgraded network provider hotspots nationwide, stay connected everywhere.</item>
+        <item>Check your network security with our Check Security function.</item>
+        <item>Other optimizations</item>
+    </string-array>
+</resources>

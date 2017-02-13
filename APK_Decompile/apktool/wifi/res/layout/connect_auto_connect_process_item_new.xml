@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_state" android:layout_width="22.0dip" android:layout_height="22.0dip" android:contentDescription="@null" />
+    <ProgressBar android:layout_gravity="center_vertical" android:id="@id/pb_state" android:layout_width="22.0dip" android:layout_height="22.0dip" android:indeterminateDrawable="@drawable/connect_progress_indeterminate_anim_r" style="?android:attr/progressBarStyleSmall" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/framework_primary_text_normal_color" android:layout_gravity="center_vertical" android:id="@id/tv_state" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+</LinearLayout>

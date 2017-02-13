@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/settings_pref_plugin_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory />
+    <Preference android:icon="@drawable/settings_permission_settings_ic_m_wifi" android:title="@string/settings_pref_hotspot_title" android:key="settings_pref_hotspot" />
+    <PreferenceCategory />
+    <Preference android:icon="@drawable/settings_ic_flow" android:title="@string/settings_pref_traffic_title" android:key="settings_pref_traffic" />
+    <Preference android:icon="@drawable/settings_ic_download_manager" android:title="@string/settings_pref_dm_title" android:key="settings_pref_dm" />
+</PreferenceScreen>

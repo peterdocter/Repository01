@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="开发者选项"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:persistent="true" android:title="启用浏览器调试" android:key="settings_pref_enable_webview_debug" />
+    <Preference android:title="拷贝crash日志" android:key="settings_pref_copy_crash" />
+    <Preference android:title="上传本地日志" android:key="settings_pref_upload_logcat" />
+</PreferenceScreen>

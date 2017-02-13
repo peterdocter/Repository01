@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>应用介绍</title>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+  <style type="text/css">
+  html,
+  body {
+    margin: 0;
+    padding: 0 10px;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-align: left;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    -webkit-text-size-adjust: none;
+  }
+
+  h3 {
+    font-weight: normal;
+    color: #1295df;
+  }
+
+  ul {
+    padding: 0 10px 0 20px;
+  }
+  </style>
+  <!-- <script src="scripts/zepto.min.js"></script> -->
+  <script>
+  </script>
+</head>
+
+<body>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WiFi万能钥匙是一款自动获取周边免费WiFi热点信息并建立连接的android手机必备工具。</p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;所有的热点信息基于云端数据库，内置全国过亿WiFi热点数据，随时随地轻松接入无线网络，最大化使用各种联网的移动服务，扫除无网断网的状态，尤其适合商务人群、移动人群和重度网虫。</p>
+  <div id="container"></div>
+  <script>
+  ;(function(window, undefined) {
+    var bridge = bridge || {};
+    var readyFnArray = [];
+    var timer;
+    var lag;
+    var clearTimer = function(){
+      clearInterval(timer);
+      timer = null;
+      for (var i = 0; i < readyFnArray.length; i++) {
+        var fn = readyFnArray[i];
+        fn && fn();
+      };
+    };
+    bridge.isBridge = function() {
+        if (typeof window.WiFikey != 'undefined') {
+          return 'android';
+        };
+        return '';
+    };
+    bridge.ready = function(fn){
+      var self = this;
+      if (this.isBridge()) {
+        fn && fn();
+      } else {
+        readyFnArray.push(fn);
+        if (timer) {
+          return false;
+        };
+        lag = +new Date();
+        timer = setInterval(function(){
+          if (self.isBridge() || (+new Date() - lag) >= 3000) {
+            clearTimer();
+          };
+        }, 100);
+
+      };
+    };
+
+    var baseLang = 'zh';
+    window.init = function(items) {
+      var arr = items;
+      var html = '';
+      var arrs = [];
+      for (idx in arr) {
+        if (arr[idx].vcode <= ver) {
+          arrs.push('<h3>' + idx + arr[idx].title + '</h3>');
+          arrs.push('<ul><li>');
+          arrs.push(arr[idx].desc.join('<li>'))
+          arrs.push('</li></ul>');
+        };
+      };
+
+      document.getElementById('container').innerHTML = arrs.join('');
+  Q
+    };
+
+    bridge.ready(function(){
+      var lan = navigator.language;
+      if (lan.indexOf('zh') >= 0) {
+        window.lang = 'zh';
+      };
+      window.ver = WiFikey.getcltInfo('vcode');
+
+      var json = 'http://static.51y5.net/wifi/appintro/data/' + ver + '/' + lang + '.js?' + new Date().getTime();
+      var scr = document.createElement("SCRIPT");
+      scr.setAttribute('type', 'text/javascript');
+      scr.setAttribute('src', json);
+      scr.setAttribute('charset', 'utf-8');
+      document.getElementsByTagName('head')[0].appendChild(scr);
+    });
+
+  })(window);
+  </script>
+</body>
+
+</html>

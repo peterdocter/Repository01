@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/notification_bar_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ad_wifimob_download" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/notifi_progress" android:layout_toRightOf="@id/notification_bar_icon">
+        <TextView android:id="@id/notifi_file_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="TextView" />
+        <ProgressBar android:id="@id/notifi_progressBar" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_weight="1.26" style="?android:attr/progressBarStyleHorizontal" />
+    </LinearLayout>
+    <TextView android:id="@id/notifi_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:layout_alignParentRight="true" />
+</RelativeLayout>

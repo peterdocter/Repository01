@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="bottom|left|center" android:id="@*android:id/title" android:paddingLeft="@dimen/framework_preference_category_item_padding_side" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@null" android:textAllCaps="true" style="@style/BL.TextAppearance.PreferenceCategory" />
+    <ProgressBar android:layout_gravity="bottom|right|center" android:id="@id/scanning_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" style="?android:attr/progressBarStyleSmall" />
+</FrameLayout>

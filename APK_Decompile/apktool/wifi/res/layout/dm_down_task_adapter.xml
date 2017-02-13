@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lantern.dm.model.TaskItem android:background="@color/framework_white_color" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="92.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/framework_white_color" android:layout_width="fill_parent" android:layout_height="92.0dip">
+        <RelativeLayout android:background="@drawable/dm_item_bg" android:layout_width="fill_parent" android:layout_height="92.0dip">
+            <CheckBox android:id="@id/dm_cb_item" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_centerVertical="true" style="@style/Widget.CompoundButton.CheckBox" />
+            <ImageView android:id="@id/dm_app_icon" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="16.0dip" android:src="@drawable/dm_file_default_icon" android:layout_toRightOf="@id/dm_cb_item" android:layout_centerVertical="true" android:contentDescription="@null" />
+            <FrameLayout android:id="@id/dm_fl_swch" android:layout_width="60.0dip" android:layout_height="fill_parent" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true">
+                <Button android:textSize="12.0dip" android:textColor="#ff999999" android:layout_gravity="right|center" android:id="@id/dm_btn_swch" android:background="@drawable/dm_button_pause_bg" android:layout_width="54.0dip" android:layout_height="26.0dip" android:text="@string/download_pause_file" />
+            </FrameLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="20.0dip" android:layout_toLeftOf="@id/dm_fl_swch" android:layout_toRightOf="@id/dm_app_icon" android:layout_centerVertical="true">
+                <TextView android:textSize="15.0dip" android:textColor="#ff252525" android:id="@id/dm_app_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+                <ProgressBar android:id="@id/dm_progress_bar" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_marginTop="6.0dip" android:max="100" android:layout_below="@id/dm_app_name" style="@style/DMProgress_horizontal" />
+                <TextView android:textSize="13.0dip" android:textColor="#ffc0c0c0" android:id="@id/dm_down_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="14.0dip" android:singleLine="true" android:layout_below="@id/dm_progress_bar" />
+                <TextView android:textSize="13.0dip" android:textColor="#ffc0c0c0" android:id="@id/dm_down_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:singleLine="true" android:layout_toRightOf="@id/dm_down_speed" android:layout_below="@id/dm_progress_bar" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</com.lantern.dm.model.TaskItem>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.lantern.browser.ui.WkDetailContentLayout android:id="@id/browser_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="vertical" android:id="@id/browser_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.lantern.browser.comment.ui.WkCommentToolBar android:id="@id/browser_comment_toolbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="46.0dip" />
+            <RelativeLayout android:id="@id/browser_ad_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/browser_error_layout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/browser_error_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/browser_error_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/browser_error" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff999999" android:id="@id/browser_error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/browser_load_error_notice" android:layout_below="@id/browser_error_image" android:layout_centerHorizontal="true" />
+            <Button android:textSize="15.0sp" android:textColor="#ff999999" android:gravity="center" android:id="@id/browser_error_btn" android:background="@drawable/browser_button_solid" android:layout_width="120.0dip" android:layout_height="32.0dip" android:layout_marginTop="30.0dip" android:text="@string/browser_load_error_refresh" android:layout_below="@id/browser_error_text" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ProgressBar android:layout_gravity="top" android:id="@id/browser_progressbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:progress="0" style="@style/WkBrowwserProgressBarHorizontal" />
+</merge>

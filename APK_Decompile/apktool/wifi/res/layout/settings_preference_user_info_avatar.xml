@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:minHeight="90.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:paddingLeft="10.0dip" android:paddingTop="@dimen/framework_preference_item_padding_top" android:paddingRight="@dimen/framework_preference_item_padding_inner" android:paddingBottom="@dimen/framework_preference_item_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textAppearance="@style/BL.TextAppearance.PreferenceList" android:textSize="16.0sp" android:ellipsize="marquee" android:id="@*android:id/title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textAppearance="@style/BL.TextAppearance.List.Secondary.Preference" android:textSize="14.0sp" android:id="@*android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="10" android:layout_below="@*android:id/title" android:layout_alignLeft="@*android:id/title" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/framework_preference_icon_minWidth">
+        <ImageView android:layout_gravity="center" android:id="@*android:id/icon" android:paddingRight="@dimen/framework_preference_item_padding_inner" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="@dimen/framework_preference_item_padding_inner" android:layout_marginBottom="@dimen/framework_preference_item_padding_inner" />
+    </LinearLayout>
+</LinearLayout>

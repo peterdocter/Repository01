@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#fff4f5f9" android:layout_width="fill_parent" android:layout_height="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_o2o" android:background="@drawable/noti_o2o_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@id/ivLogo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:src="@drawable/noti_o2o_ic_logo_connected" />
+        <TextView android:textSize="17.0dip" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/tvSsid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="modou_my" android:singleLine="true" />
+    </LinearLayout>
+    <FrameLayout android:background="@drawable/noti_o2o_bg" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <TextView android:layout_gravity="center_vertical" android:id="@id/tvSplitLine" android:background="#ffbec5d5" android:layout_width="1.0dip" android:layout_height="45.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_service_list" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+</LinearLayout>

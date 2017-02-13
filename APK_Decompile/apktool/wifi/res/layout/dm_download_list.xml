@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@*android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/load_selection_menu" android:background="#ff0285f0" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <CheckBox android:id="@id/load_checkbox_select" android:layout_width="90.0dip" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" style="@style/Widget.BottomMenu.CheckBox" />
+        <TextView android:textSize="17.0sp" android:textColor="@color/framework_white_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="46.0dip" android:text="@string/download_apk_file_select_all" android:layout_centerVertical="true" />
+        <Button android:textSize="17.0sp" android:textColor="@color/framework_white_color" android:id="@id/load_deselect_all" android:background="@null" android:layout_width="66.0dip" android:layout_height="fill_parent" android:text="@string/download_file_delete" android:layout_alignParentRight="true" />
+        <View android:background="#ff006fcd" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="12.0dip" android:layout_marginRight="60.0dip" android:layout_marginBottom="12.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.lantern.download.utils.PinnedExpandableListView android:id="@id/download_expandablelistview" android:background="#00000000" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00ff00ff" android:cacheColorHint="#00000000" android:groupIndicator="@null" android:childDivider="#ffd0d0d0" android:divider="#ffd0d0d0" android:dividerHeight="0.100000024dip" android:layout_above="@id/load_selection_menu" />
+</RelativeLayout>

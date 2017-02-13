@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="18.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_set_default_wifi_manager_tip" android:includeFontPadding="false" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:src="@drawable/settings_default_wifi_manager_guide" />
+    </LinearLayout>
+    <Button android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn_set_wifi_manager" android:background="@drawable/settings_default_wifi_manager_btn_background" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="30.0dip" android:text="@string/settings_set_default_wifi_manager_now" />
+</LinearLayout>

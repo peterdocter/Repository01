@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>introduction</title>
+<meta name="viewport"
+	content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<style type="text/css">
+html,body {
+	margin: 0;
+	padding: 0 10px;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	text-align: left;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	-webkit-text-size-adjust: none;
+}
+h3 {
+	font-weight: normal;
+	color: #1295df;
+}
+ul {
+	padding: 0 10px 0 20px;
+}
+</style>
+</head>
+<body>
+	<p>WiFi Master is a good tool for smart phones with Android system to obtain surrounding open WiFi information and establish WiFi connection automatically.</p>
+	<p>All the WiFi information is stored in cloud database with millions accessible WiFis.  Users will connect to wireless network easily at all times and maximize the usage of various mobile services.  By using this app, you will always get connected.  This app is suitable for all the people, especially for business, mobile people and addicted net worms.</p>
+	<div id="container"></div>
+		<script>
+		;(function(window, undefined) {
+	    var bridge = bridge || {};
+	    var readyFnArray = [];
+	    var timer;
+	    var lag;
+	    var clearTimer = function(){
+	      clearInterval(timer);
+	      timer = null;
+	      for (var i = 0; i < readyFnArray.length; i++) {
+	        var fn = readyFnArray[i];
+	        fn && fn();
+	      };
+	    };
+	    bridge.isBridge = function() {
+	        if (typeof window.WiFikey != 'undefined') {
+	          return 'android';
+	        };
+	        return '';
+	    };
+	    bridge.ready = function(fn){
+	      var self = this;
+	      if (this.isBridge()) {
+	        fn && fn();
+	      } else {
+	        readyFnArray.push(fn);
+	        if (timer) {
+	          return false;
+	        };
+	        lag = +new Date();
+	        timer = setInterval(function(){
+	          if (self.isBridge() || (+new Date() - lag) >= 3000) {
+	            clearTimer();
+	          };
+	        }, 100);
+
+	      };
+	    };
+
+	    var baseLang = 'en';
+
+	    window.init = function(items) {
+	      var arr = items;
+	      var html = '';
+	      var arrs = [];
+	      for (idx in arr) {
+	        if (arr[idx].vcode <= ver) {
+	          arrs.push('<h3>' + idx + arr[idx].title + '</h3>');
+	          arrs.push('<ul><li>');
+	          arrs.push(arr[idx].desc.join('<li>'))
+	          arrs.push('</li></ul>');
+	        };
+	      };
+
+	      document.getElementById('container').innerHTML = arrs.join('');
+
+	    };
+
+	    bridge.ready(function(){
+	      var lan = navigator.language;
+	      if (lan.indexOf('en') >= 0) {
+	        window.lang = 'en';
+	      };
+	      window.ver = WiFikey.getcltInfo('vcode');
+
+	      var json = 'http://static.51y5.net/wifi/appintro/data/' + ver + '/' + lang + '.js?' + new Date().getTime();
+	      json = './data/' + ver + '/' + lang + '.js?' + new Date().getTime();
+	      var scr = document.createElement("SCRIPT");
+	      scr.setAttribute('type', 'text/javascript');
+	      scr.setAttribute('src', json);
+	      scr.setAttribute('charset', 'utf-8');
+	      document.getElementsByTagName('head')[0].appendChild(scr);
+	    });
+
+	  })(window);
+  </script>
+</body>
+</html>

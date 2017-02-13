@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/share_prompt_title_icon" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="18.0sp" android:textColor="#ff0285f0" android:id="@id/share_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="20.0dip" />
+        <LinearLayout android:id="@id/show_password_tip_layout" android:layout_marginBottom="20.0dip" style="@style/wifi_item">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <CheckBox android:gravity="top" android:id="@id/share_tip_waring" android:button="@drawable/show_password_tip" style="@style/wifi_item_content" />
+                <TextView android:textSize="@dimen/text_size_xsmall" android:textColor="#ff999999" android:text="@string/wifi_passwrod_dialog_desc" style="@style/wifi_item_checkbox_text" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

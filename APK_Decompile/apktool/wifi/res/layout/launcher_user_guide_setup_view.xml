@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wk="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/launcher_user_guide_4" android:scaleType="centerCrop" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_user_agreement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="32.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="9.0sp" android:textColor="#ff999999" android:id="@id/tv_lab_user_agreement" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/act_setup_tv_i_agree" android:singleLine="true" />
+        <TextView android:textSize="9.0sp" android:textColor="#ff0285f0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="《" android:singleLine="true" />
+        <TextView android:textSize="9.0sp" android:textColor="#ff0285f0" android:id="@id/tv_user_agreement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/act_setup_tv_user_agreement" android:singleLine="true" />
+        <TextView android:textSize="9.0sp" android:textColor="#ff0285f0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="》" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_sms_tips" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:layout_above="@id/ll_user_agreement" android:layout_centerHorizontal="true">
+        <TextView android:textSize="9.0sp" android:textColor="#ff999999" android:gravity="center" android:id="@id/act_setup_sms_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/act_setup_sms_send_tip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_auto_backup_cb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="11.0dip" android:layout_above="@id/ll_sms_tips" android:layout_centerHorizontal="true">
+        <com.lantern.widget.WkCheckBox android:id="@id/cb_auto_share" android:paddingLeft="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" wk:checked="true" wk:text="@string/act_setup_cb_auto_share" wk:text_size="13.0sp" wk:text_color="#ff999999" />
+        <com.lantern.widget.WkCheckBox android:id="@id/cb_auto_backup" android:paddingLeft="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" wk:checked="true" wk:text="@string/act_setup_cb_auto_backup" wk:text_size="13.0sp" wk:text_color="#ff999999" />
+    </LinearLayout>
+    <RelativeLayout android:layout_gravity="center" android:id="@id/rl_panel_start_user" android:layout_width="200.0dip" android:layout_height="40.0dip" android:layout_marginBottom="20.0dip" android:layout_above="@id/ll_auto_backup_cb" android:layout_centerHorizontal="true">
+        <Button android:textSize="18.0sp" android:textColor="#ff0285f0" android:gravity="center" android:id="@id/btn_startuse" android:background="@drawable/launcher_start_button_background" android:layout_width="200.0dip" android:layout_height="40.0dip" android:text="@string/act_setup_btn_onekey" />
+        <ImageView android:id="@id/iv_register_icon" android:visibility="gone" android:layout_width="33.0dip" android:layout_height="33.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/launcher_user_guide_register_ing" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

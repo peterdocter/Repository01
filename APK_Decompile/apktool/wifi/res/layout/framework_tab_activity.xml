@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.bluefay.widget.ActionTopBarView android:gravity="center_vertical" android:layout_gravity="top" android:orientation="horizontal" android:id="@id/actiontopbar" android:layout_width="fill_parent" android:layout_height="@dimen/framework_action_top_bar_height" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:background="@drawable/framework_actionbar_shadow" android:layout_width="fill_parent" android:layout_height="6.0dip" />
+    </FrameLayout>
+    <com.bluefay.widget.TabBarView android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/tabbar" android:layout_width="fill_parent" android:layout_height="@dimen/framework_bottom_tab_bar_height" />
+</LinearLayout>

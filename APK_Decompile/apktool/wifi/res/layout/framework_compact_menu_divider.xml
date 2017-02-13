@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View android:background="@color/framework_list_view_divider_color" android:layout_width="@dimen/framework_compact_menu_divider_width" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

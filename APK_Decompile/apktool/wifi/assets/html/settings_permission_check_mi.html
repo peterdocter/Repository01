@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <style type="text/css">
+  html,
+  body,
+  div,
+  span,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  a,
+  code,
+  em,
+  img,
+  q,
+  small,
+  strong,
+  dd,
+  dl,
+  dt,
+  li,
+  ol,
+  ul,
+  fieldset,
+  form,
+  label,
+  table,
+  tbody,
+  tr,
+  th,
+  td,
+  input {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html,
+  body {
+    font-size: 62.5%;
+    /*10 ÷ 16 × 100% = 62.5%*/
+    height: 100%;
+    width: 100%;
+    background-color:#f2f2f2;
+    font-family: arial, Helvetica, sans-serif;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  em,
+  i {
+    font-style: normal;
+  }
+  
+  iframe,
+  img {
+    border: none;
+  }
+  
+  input,
+  img {
+    vertical-align: middle;
+  }
+  
+  ul,
+  ol,
+  li {
+    list-style: none;
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+ 
+  @media only screen and (min-width:361px) and (max-width:412px) {
+    html {
+      font-size: 84%;
+    }
+  }
+  
+  @media only sscreen and (min-width:413px) and (max-width:600px) {
+    html {
+      font-size: 89%;
+    }
+  }
+
+
+  
+  .page {
+    padding: 2.5rem 2.8rem 0;
+  }
+  .title{
+    font-size: 1.333rem;
+    color: #0285f0;
+    margin-bottom: 1.5rem;
+  }
+  .item {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .col-50 {
+    width: 45%;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.7rem;
+    color: #666;
+    font-size: 1rem;
+  }
+  
+  .col-50>* {
+    max-width: 100%;
+    min-width: 125px;
+    min-height: 100px;
+    clear: both;
+  }
+  .col-50:nth-child(2) {
+    margin-left: 8.5%;
+  }
+  
+  footer {
+    position: static;
+    display: block;
+    margin-top: 2.3rem;
+    width: 100%;
+    left: 0;
+    bottom: 0%;
+  }
+  
+  footer button {
+    width: 100%;
+    height: 4.1667rem;
+    background-color: #0284ef;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  
+  footer button.disabled {
+    background-color: #999;
+    color: #333;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <h3 class="title">小米手机设置方法：</h3>
+    <div class="item">
+      <div class="col-50">① 进入【安全中心】选择【授权管理】， 点击【应用权限管理】：</div>
+      <div class="col-50"><img src="images/mi_1.png" alt=""></div>
+    </div>
+    <div class="item">
+      <div class="col-50"><img src="images/mi_2.png" alt=""></div>
+      <div class="col-50">② 在【应用权限管理】找到【WiFi万能钥匙】, 点击进入： </div>
+    </div>
+    <div class="item">
+      <div class="col-50"> ③ 找到并点击【定位】，点击选择【允许】，即开启定位功能： </div>
+      <div class="col-50"><img src="images/mi_3.png" alt=""></div>
+    </div>
+  </div>
+  <footer>
+    <button id='btn_open_sys' class="btn-primary disabled">立即开启</button>
+  </footer>
+  <script src="qa/scripts/zepto.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    var init = function() {
+      if (typeof permission === 'undefined') {
+        return false;
+      } else {
+        clearInterval(timer);
+      };
+      var _type = permission.getPhType();
+      if (_type == 1) {
+        $('#btn_open_sys').removeClass('disabled');
+      };
+      $('#btn_open_sys').on('click', function() {
+        var $this = $(this);
+        if (!$this.hasClass('disabled')) {
+          var result = permission.openSysSetting();
+        };
+      });
+    };
+    var timer = setInterval(function(){
+      init();
+    }, 100);
+
+  });
+  </script>
+</body>
+
+</html>

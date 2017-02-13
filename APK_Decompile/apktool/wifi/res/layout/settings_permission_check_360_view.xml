@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pop_window_bg_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingTop="20.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:id="@id/check_setting_dec_360_tv_1" android:background="@drawable/settings_permission_check_item_bg" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+            <ImageView android:id="@id/check_setting_dec_line1" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/settings_permission_check_360_1" />
+            <TextView android:textSize="14.0sp" android:id="@id/check_setting_dec_360_tv_2" android:background="@drawable/settings_permission_check_item_bg" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+            <ImageView android:id="@id/check_setting_dec_line2" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/settings_permission_check_360_2" />
+            <TextView android:textSize="14.0sp" android:id="@id/check_setting_dec_360_tv_3" android:background="@drawable/settings_permission_check_item_bg" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+            <ImageView android:id="@id/check_setting_dec_line3" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/settings_permission_check_360_3" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

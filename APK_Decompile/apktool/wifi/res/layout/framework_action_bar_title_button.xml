@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/framework_action_top_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="@dimen/framework_action_bar_title_size" android:textColor="@color/framework_action_bar_text" android:gravity="left|center" android:id="@id/title_panel" android:background="@null" android:layout_width="fill_parent" android:layout_height="@dimen/framework_action_top_bar_height" android:text="@null" android:maxLines="2" android:singleLine="false" />
+    <FrameLayout android:id="@id/custom_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/framework_action_top_bar_height" />
+</FrameLayout>

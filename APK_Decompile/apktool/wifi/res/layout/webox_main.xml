@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="140.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <Button android:textSize="24.0dip" android:id="@id/jsapi" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="JS-API" />
+        <Button android:textSize="24.0dip" android:id="@id/browser" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="Browser" />
+        <Button android:textSize="24.0dip" android:id="@id/authz" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="Authz" />
+        <Button android:textSize="24.0dip" android:id="@id/isOnline" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="isOnline" />
+        <Button android:textSize="24.0dip" android:id="@id/authzURL" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="authzURL" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="URL：" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/settings_diagnonse_urltest_editText0" android:background="@drawable/settings_diagnose_input_droplist" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" />
+        <Spinner android:id="@id/settings_diagnose_urltest_spinner" android:background="@drawable/settings_diagnose_traffic_button_bg_n" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="2.0dip" android:layout_alignRight="@id/settings_diagnonse_urltest_editText0" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="线程数：" />
+        <EditText android:id="@id/settings_diagnose_urltest_editText1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="次数" />
+        <EditText android:id="@id/settings_diagnose_urltest_editText2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="20" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="间隔" />
+        <EditText android:id="@id/settings_diagnose_urltest_editText3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开始测试" android:layout_alignParentLeft="true" android:onClick="beginTest" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="清除信息" android:layout_toLeftOf="@id/settings_diagnose_urltest_btn_pause" android:onClick="clearMessage" />
+        <Button android:id="@id/settings_diagnose_urltest_btn_pause" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="停止" android:layout_alignParentRight="true" android:onClick="pauseTest" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.lantern.settings.diagnose.AutoScrollTextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/settings_diagnose_urltest_textViewMessage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+    </ScrollView>
+</LinearLayout>

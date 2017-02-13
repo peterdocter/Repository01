@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/main_blue" android:layout_width="fill_parent" android:layout_height="195.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wifi.connect.widget.ProgressTextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/text_size_large" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="55.0dip" android:layout_marginTop="28.0dip" android:layout_marginRight="55.0dip" android:singleLine="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <HorizontalScrollView android:id="@id/location_scrollview" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="60.0dip" android:layout_marginRight="50.0dip" android:fillViewport="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/text_size_xsmall" android:textColor="#ff8fc9f9" android:ellipsize="none" android:gravity="center" android:id="@id/location" android:layout_width="wrap_content" android:layout_height="28.0dip" android:singleLine="true" />
+    </HorizontalScrollView>
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#ffffffff" android:gravity="left|center" android:id="@id/one_key_query" android:background="@drawable/one_key_query_background" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginTop="97.0dip" android:minWidth="156.0dip" android:text="@string/wifi_one_key_query" android:drawableLeft="@drawable/one_key_query" android:drawablePadding="9.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/wifi_member" android:background="#ff0285f0" android:layout_width="fill_parent" android:layout_height="33.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="33.0dip" android:layout_height="33.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="13.0dip" android:src="@drawable/connect_wifi_member" android:scaleType="center" />
+        <TextView android:textSize="13.0dip" android:textColor="#9affffff" android:ellipsize="end" android:gravity="left|center" android:layout_width="fill_parent" android:layout_height="33.0dip" android:text="@string/tips_wifi_memeber_wifikey" android:singleLine="true" />
+    </LinearLayout>
+    <View android:background="#ff2395f2" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_above="@id/wifi_member" />
+</RelativeLayout>

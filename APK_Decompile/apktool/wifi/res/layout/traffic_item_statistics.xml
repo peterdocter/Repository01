@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/appLogo" android:layout_width="33.0dip" android:layout_height="33.0dip" android:layout_margin="10.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="33.0dip" android:layout_marginRight="10.0dip" android:layout_toRightOf="@id/appLogo" android:layout_alignTop="@id/appLogo">
+        <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:id="@id/appName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="130.0dip" android:text="淘宝" android:singleLine="true" android:includeFontPadding="false" android:layout_centerVertical="true" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff9c9c9c" android:id="@id/trafficCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="50M" android:includeFontPadding="false" android:layout_toRightOf="@id/appName" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff1382ef" android:id="@id/trafficPercent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="15%" android:includeFontPadding="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="#ffdbdbdb" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_toRightOf="@id/appLogo" android:layout_below="@id/appLogo" />
+</RelativeLayout>

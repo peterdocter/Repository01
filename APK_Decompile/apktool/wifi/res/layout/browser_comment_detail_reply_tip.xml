@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="#ffebebeb" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="#ff999999" android:gravity="center_vertical" android:id="@id/tipReplyTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="33.0dip" android:text="" android:includeFontPadding="false" />
+    <ImageView android:id="@id/tipReplyImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/news_comment_openup" />
+</LinearLayout>

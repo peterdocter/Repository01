@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/news_comment_popup_menu_bg" android:paddingLeft="16.0dip" android:paddingTop="0.0dip" android:paddingRight="16.0dip" android:paddingBottom="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:id="@id/popupMenuReply" android:paddingTop="7.0dip" android:paddingBottom="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comment_reply" android:includeFontPadding="false" />
+        <View android:id="@id/popupMenuDevider" android:background="#80ffffff" android:layout_width="0.5dip" android:layout_height="14.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:id="@id/popupMenuCopy" android:paddingTop="7.0dip" android:paddingBottom="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comment_copy" android:includeFontPadding="false" />
+    </LinearLayout>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/news_comment_popup_menu_bottom" />
+</LinearLayout>

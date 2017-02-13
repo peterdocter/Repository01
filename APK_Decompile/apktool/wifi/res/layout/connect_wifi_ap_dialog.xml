@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="300.0sp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/info" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:id="@id/type" android:visibility="gone" style="@style/wifi_item">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/wifi_ssid" />
+            <EditText android:id="@id/ssid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="32" android:inputType="textNoSuggestions" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/wifi_security" />
+            <Spinner android:entries="@array/wifi_ap_security" android:id="@id/security" android:layout_width="fill_parent" android:layout_height="wrap_content" android:prompt="@string/wifi_security" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/fields" android:visibility="gone" style="@style/wifi_item">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/wifi_password" />
+            <EditText android:id="@id/password" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="63" />
+            <TextView android:textSize="12.0sp" android:id="@id/hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0sp" android:text="@string/credentials_password_too_short" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

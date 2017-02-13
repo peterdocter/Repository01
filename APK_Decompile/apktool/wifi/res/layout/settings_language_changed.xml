@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="80.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rg_language" android:layout_width="fill_parent" android:layout_height="80.0dip">
+        <RadioButton android:textSize="15.0sp" android:textColor="#ff484a4f" android:id="@id/rb_english" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:button="@null" android:text="English" android:drawableLeft="@drawable/settings_ckbox_language_style" android:drawablePadding="10.0dip" />
+        <RadioButton android:textSize="15.0sp" android:textColor="#ff484a4f" android:id="@id/rb_chinese" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26.0dip" android:checked="true" android:button="@null" android:text="中文(简体)" android:drawableLeft="@drawable/settings_ckbox_language_style" android:drawablePadding="10.0dip" />
+    </RadioGroup>
+</FrameLayout>

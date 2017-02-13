@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory />
+    <Preference android:icon="@drawable/settings_account_avtar" android:layout="@layout/settings_preference_avatar" android:title="" android:key="pref_person" android:summary="@string/settings_pref_register_summary" />
+    <PreferenceCategory />
+    <com.lantern.settings.widget.UserLevelPreference android:icon="@drawable/settings_ic_level" android:title="@string/settings_pref_level_title" android:key="settings_pref_level" />
+    <Preference android:icon="@drawable/settings_ic_message" android:title="@string/settings_pref_message_title" android:key="settings_pref_message" />
+    <Preference android:icon="@drawable/settings_ic_plugin" android:title="@string/settings_pref_plugin_title" android:key="settings_pref_plugin" />
+    <Preference android:icon="@drawable/settings_ic_insurance" android:title="@string/settings_pref_insurance_title" android:key="settings_pref_insurance" />
+    <PreferenceCategory />
+    <Preference android:icon="@drawable/settings_ic_backup_blue" android:title="@string/settings_pref_backup_ap_title" android:key="settings_pref_backup_ap" />
+    <Preference android:icon="@drawable/settings_ic_feedback" android:title="@string/settings_pref_feedback_title" android:key="settings_pref_feedback" />
+    <PreferenceCategory />
+    <Preference android:icon="@drawable/settings_ic_setting" android:layout="@layout/settings_preference_more_setting" android:title="@string/settings_pref_settings_title" android:key="settings_pref_minesettings" />
+</PreferenceScreen>

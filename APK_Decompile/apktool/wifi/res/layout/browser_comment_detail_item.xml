@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.lantern.browser.comment.ui.WkCommentAvatarView android:id="@id/commentUserAvatar" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="14.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:id="@id/commentNickName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="nickName" android:layout_toRightOf="@id/commentUserAvatar" android:layout_alignTop="@id/commentUserAvatar" />
+        <TextView android:textSize="11.0sp" android:textColor="#ffcccccc" android:id="@id/commentTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_below="@id/commentNickName" android:layout_alignLeft="@id/commentNickName" />
+        <com.lantern.browser.comment.ui.WkCommentLikeButton android:id="@id/commentLikeBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.lantern.browser.comment.ui.WkCommentFloorView android:id="@id/commentContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="46.0dip" />
+    <View android:background="@color/comment_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="12.0dip" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@*android:id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/framework_preference_item_padding_side" android:layout_marginRight="@dimen/framework_preference_item_padding_side" android:minHeight="@dimen/framework_alert_dialog_button_bar_height" android:text="@null" />
+</LinearLayout>

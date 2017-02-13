@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="@color/framework_white_color" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/small_star_image_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <ImageView android:id="@id/small_star1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/apgrade_tiny_star_gray" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/small_star2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/apgrade_tiny_star_gray" android:layout_toRightOf="@id/small_star1" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/small_star3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/apgrade_tiny_star_gray" android:layout_toRightOf="@id/small_star2" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/small_star4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/apgrade_tiny_star_gray" android:layout_toRightOf="@id/small_star3" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/small_star5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/apgrade_tiny_star_gray" android:layout_toRightOf="@id/small_star4" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:id="@id/small_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/small_star_image_layout" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+version: 1.5.2
+apkFileName: WiFiwannengyaochi_3083.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '8'
+  targetSdkVersion: '14'
+packageInfo:
+  cur_package: com.snda.wifilocating
+  orig_package: com.snda.wifilocating
+compressionType: false

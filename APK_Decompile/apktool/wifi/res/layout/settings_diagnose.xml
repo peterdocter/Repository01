@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/activity_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/act_diagnose_banner" android:background="#ff1086e8" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <Button android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:background="@drawable/setting_act_wifi_more_head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="btnBack" />
+        <TextView android:textSize="20.0dip" android:textColor="@*android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="y5" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip" android:layout_below="@id/act_diagnose_banner">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:background="@drawable/setting_btn_big_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="SD" android:onClick="btnDeepUnlock" />
+            <Button android:background="@drawable/setting_btn_big_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="KH" android:onClick="btnKenHuang" />
+            <Button android:id="@id/btn_debug_on" android:background="@drawable/setting_btn_big_bg" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="debug on" android:onClick="btnDebugOn" />
+            <Button android:background="@drawable/setting_btn_big_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="管理员模式连接日志" android:onClick="btnLogWinConn" />
+            <Button android:background="@drawable/setting_btn_big_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="测试默认日志窗口" android:onClick="btnLogWinDef" />
+            <Button android:background="@drawable/setting_btn_big_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="注册信息" android:onClick="btnShowRegisterInfo" />
+            <Button android:background="@drawable/setting_btn_big_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="渠道信息" android:onClick="btnShowChannelInfo" />
+            <Button android:background="@drawable/setting_btn_big_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="uploadTopn" android:onClick="btnUploadTopn" />
+            <Button android:background="@drawable/setting_btn_big_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Url并发测试" android:onClick="btnUrltest" />
+            <Button android:background="@drawable/setting_btn_big_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="查询剩余上报日志数" android:onClick="btnReportLogNum" />
+            <Button android:background="@drawable/setting_btn_big_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="绑定Uhid" android:onClick="btnBindUHid" />
+            <Button android:background="@drawable/setting_btn_big_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="开启浏览器错误提示" android:onClick="btnToastErrorInBrowser" />
+            <Button android:background="@drawable/setting_btn_big_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="流量监控" android:onClick="btnTrafficState" />
+            <Button android:background="@drawable/setting_btn_big_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="进入开发者选项" android:onClick="gotoDeveloperOption" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:gravity="center" android:id="@id/textView1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+            </LinearLayout>
+            <Button android:background="@drawable/setting_btn_big_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="账户管理" android:onClick="btnManageAccount" />
+            <Button android:background="@drawable/setting_btn_big_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="清除Uhid" android:onClick="btnClearUHID" />
+            <Button android:background="@drawable/setting_btn_big_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="设置定位经纬度" android:onClick="btnTestLoLa" />
+            <Button android:background="@drawable/setting_btn_big_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="切换服务器" android:onClick="btnSwitchServer" />
+            <Button android:background="@drawable/setting_btn_big_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="dq查看" android:onClick="btnViewDownQueue" />
+            <Button android:background="@drawable/setting_btn_big_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="测速手机信息" android:onClick="btnTrafficSpeed" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/act_diagnose_feed_url_test" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <EditText android:id="@id/act_diagnose_feed_url" android:layout_width="120.0dip" android:layout_height="wrap_content" android:singleLine="true" />
+                <Button android:background="@drawable/setting_btn_big_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="修改feed地址" android:onClick="btnFeedUrlTest" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/act_diagnose_js_inject" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <EditText android:id="@id/act_diagnose_js_url" android:layout_width="120.0dip" android:layout_height="wrap_content" android:singleLine="true" />
+                <Button android:background="@drawable/setting_btn_big_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="浏览器注入js测试" android:onClick="btnJsInject" />
+            </LinearLayout>
+            <ImageView android:id="@id/act_diagnose_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    <SlidingDrawer android:orientation="vertical" android:id="@id/act_diagnose_slidingDrawer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/act_diagnose_banner" android:layout_alignParentBottom="true" android:allowSingleTap="true" android:handle="@id/act_diagnose_handle" android:content="@id/act_diagnose_content" android:animateOnClick="true">
+        <ImageView android:id="@id/act_diagnose_handle" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/setting_bg_list_select" />
+        <ScrollView android:id="@id/act_diagnose_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="top|center" android:orientation="vertical" android:background="@color/activity_bg" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="clickNoop">
+                <Button android:id="@id/act_diagnose_btn_selftraffic" android:background="@drawable/setting_btn_big_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="显示自身流量" />
+                <Button android:background="@drawable/setting_btn_big_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="后台网页访问" android:onClick="btnBeWebView" />
+                <Button android:background="@drawable/setting_btn_big_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="ChinaNet连接Log" android:onClick="btnChinaNetLog" />
+                <Button android:background="@drawable/setting_btn_big_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="CMCC连接Log" android:onClick="btnCmccLog" />
+                <Button android:background="@drawable/setting_btn_big_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="MD5测试" android:onClick="btnMD5" />
+                <Button android:background="@drawable/setting_btn_big_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="测试aaa列表" android:onClick="BtnGetAppList" />
+                <Button android:background="@drawable/setting_btn_big_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="连接日志" android:onClick="btnConnInfo" />
+                <Button android:background="@drawable/setting_btn_big_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="网页测试" android:onClick="btnWebPageTest" />
+                <Button android:background="@drawable/setting_btn_big_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="更新widget热词" android:onClick="btnRefreshKeyWords" />
+                <Button android:background="@drawable/setting_btn_big_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="切换地图" android:onClick="btnSwitchMap" />
+                <Button android:background="@drawable/setting_btn_big_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="认证网页html" android:onClick="btn302html" />
+                <Button android:background="@drawable/setting_btn_big_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="i-shanghai" android:onClick="btnIShanghai" />
+                <Button android:background="@drawable/setting_btn_big_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="更新WiFilist下广告" android:onClick="btnUpdateAdOneSwitch" />
+                <Button android:background="@drawable/setting_btn_big_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="地址纠正附近场所" android:onClick="btnApOwnerTest" />
+                <Button android:background="@drawable/setting_btn_big_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="切换新闻浏览器" android:onClick="btnNewsBrowser" />
+                <Button android:background="@drawable/setting_btn_big_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="查看摘要" android:onClick="btnViewMsg" />
+                <Button android:background="@drawable/setting_btn_big_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="查看点击统计" android:onClick="btnHitStat" />
+            </LinearLayout>
+        </ScrollView>
+    </SlidingDrawer>
+    <ScrollView android:background="@color/activity_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_below="@id/act_diagnose_banner">
+        <com.lantern.settings.ui.AutoScrollTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#d0000000" android:id="@id/act_diagnose_textViewMessage" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@id/act_diagnose_ad_box" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <WebView android:id="@id/settings_feedback_diagnose_webview" android:background="#ffe9e9e9" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ProgressBar android:id="@id/settings_feedback_diagnose_prgbar_h" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_alignParentTop="true" style="?android:attr/progressBarStyleHorizontal" />
+</RelativeLayout>

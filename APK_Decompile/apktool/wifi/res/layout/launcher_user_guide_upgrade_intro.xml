@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="#ff2399f9" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/launcher_update_success" />
+    <TextView android:textSize="22.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/update_success" />
+    <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/tv_app_ver" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="40.0dip" android:text="@string/app_update_ver" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_update_intro_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="40.0dip" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/launcher_hint_scroll" />
+</LinearLayout>
