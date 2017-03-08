@@ -1,0 +1,20 @@
+锅炉压力的监控器 
+
+
+code.google.com
+
+code.taobao.org
+
+sourceforge.net
+
+
+grepcode.com
+
+
+1.假的进度条
+2M wav -> MP3  200K
+99% ~ 100%
+
+
+2.真的进度条.
+准确的知道 转化的百分比  
