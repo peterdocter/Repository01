@@ -1,0 +1,78 @@
+jni  java native interface
+     java 本地开发的接口 
+
+
+
+java 不能写驱动.
+java 一次编译 到处执行.
+
+
+java的运行时环境 - java虚拟机
+windows windows 下的java虚拟机
+linux - java虚拟机 
+
+.class
+
+android2.2 以上 
+wifi 热点共享.
+
+1.操作手机网卡, 把手机网卡的状态置为混杂模式.
+
+
+2.android下的极品飞车.
+重力引擎,碰撞效果的模拟.
+
+3. c 出现使用几十年.
+开源的c的代码库.
+opencv  intel开发, 图形和视频实时处理的方法库.
+人脸识别.
+
+rmvb 视频 avi 
+视频和音频编解码的代码库. (引擎) 
+ffmpeg   
+
+opengl c代码库
+
+
+4.车载电脑项目
+obd (onboard debug system) 
+在线的调试系统.
+
+获取 汽车 胎压 转速 发动机的温度  
+
+obd 获取出来的数据都是通过电信号 
+
+
+lame MP3的编码库 c语言开发.
+千千静听 mp3
+
+
+
+
+ndk  android native develop kits 
+android 本地开发工具集 
+可以把c/c++ ->编译成一个 linux下可以执行的二进制文件 
+java代码里面就可以通过jni 调用执行二进制的文件 
+
+
+
+
+
+
+
+每周300多个职位
+
+
+
+c语言有很多的变种.
+
+c99标准. 
+
+
+
+ 
+
+ 
+
+
+
