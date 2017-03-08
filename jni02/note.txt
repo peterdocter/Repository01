@@ -1,0 +1,145 @@
+第一个工具:
+NDK (native develop kits)  
+交叉编译的工具链:
+交叉编译: 在一个平台(处理器,操作系统)下 编译出来另外一个平台下可以运行的代码.
+windows AMD intel x86 架构-> 手机 android arm处理器
+
+
+
+
+.c .java 
+1. 编译  把源代码(高级语言)编译成一个低级语言 (汇编语言)
+2. 连接  根据具体平台的特性,(cpu的类型 x86 arm,操作系统的类型) 
+         连接成一个可以执行的二进制可执行的程序.
+
+
+第二个工具: 
+cygwin: windows下linux环境的模拟器.
+cygwin的安装目录 不能有空格,最好不要中文 
+
+
+第三个工具:
+cdt : c/c++ develop tools  (主要是用来让c和c++代码 完成高亮显示的作用)
+adt : android develop tools 
+
+
+环境变量的作用: 方便的在任何目录下 都可以使用 指定目录里面的工具
+
+
+
+LOCAL_PATH := $(call my-dir) 
+# 交叉编译器 在编译c代码/c++代码依赖的配置文件    linux下 makefile的语法的子集 
+# 获取当前Android.mk的路径  
+#变量的初始化操作 特点: 不会重新初始化LOCAL_PATH 的变量
+include $(CLEAR_VARS) 
+
+#libHello.so 加lib前缀 .so后缀 makefile的语法约定的
+LOCAL_MODULE    := libHello
+LOCAL_SRC_FILES := Hello.c
+
+include $(BUILD_SHARED_LIBRARY)
+
+
+
+ndk开发常见错误
+1. android.mk文件不存在 
+
+$ ndk-build
+Android NDK: Your APP_BUILD_SCRIPT points to an unknown file: ./jni/Android.mk  
+/cygdrive/h/heima6/jni2/ziliao/android-ndk-r7b/build/core/add-application.mk:133: *** Android NDK: Aborting...    。 停止。
+
+2.android.mk文件 的配置信息有错误
+$ ndk-build
+/cygdrive/h/heima6/jni2/ziliao/android-ndk-r7b/build/core/build-shared-library.mk:23: 
+*** Android NDK: Missing LOCAL_MODULE before including BUILD_SHARED_LIBRARY in jni/Android.mk    。 停止。
+
+
+
+3.c代码 语法出现错误,编译不通过 Error 1.
+Compile thumb  : Hello <= Hello.c
+jni/Hello.c: In function 'Java_cn_itcast_ndk_DemoActivity_helloFromC':
+jni/Hello.c:21: error: 'ctr' undeclared (first use in this function)
+jni/Hello.c:21: error: (Each undeclared identifier is reported only once
+jni/Hello.c:21: error: for each function it appears in.)
+jni/Hello.c:21: error: expected ';' before 'c'
+/cygdrive/h/heima6/jni2/ziliao/android-ndk-r7b/build/core/build-binary.mk:240: recipe for target `obj/local/armeabi/objs/Hello/Hello.o' failed
+make: *** [obj/local/armeabi/objs/Hello/Hello.o] Error 1
+
+4.java层c代码库没有找到
+Caused by: java.lang.UnsatisfiedLinkError: Library Hell0 not found
+
+静态加载代码库的时候 代码库没有找到.
+
+5.c代码函数签名出现错误
+Caused by: java.lang.UnsatisfiedLinkError: hello_from_c
+
+
+6.逻辑性的错误, 使用了已经回收的内存空间, 访问了不可以被访问的内存空间,
+修改了不能被修改的内存空间 
+
+
+
+
+断点. ndk-gdb 
+通过log 方式来观察程序执行流程 
+
+
+
+ndk开发的中文乱码问题:
+1.低版本ndk 不支持中文 ndk-r4-crystal
+iso-8859-1 转码 
+
+
+
+阿里旺旺 : 
+登陆的具体实现 c/c++ 
+socket http
+
+
+int login(char* username,char * password){
+   //开启一个socket 连接服务器 , 把username 和 password传给服务器.
+   //服务器返回 200 登陆成功 
+   //服务器返回404 登陆失败 
+}
+
+
+
+public native int Login(String username, String pwd);
+
+javah 生成native方法的签名 
+
+
+jint Java_xxx_xxx_xxx_xxx_Login(JNIENV* env , jobject obj , jstring username, jstring pwd){
+   char*  cusername = JStr2Cstr();
+   char*  cpwd = JStr2Cstr();
+   int result = login(cusername ,cpwd);
+    if(result == 200){
+    }
+}
+
+kiss :  keep it simaple stupid 
+
+int String byte[] 
+
+int[]  
+1,2,3,4,5
+
+
+c代码写文件
+
+java读文件
+
+
+
+
+java jni 粘合剂 胶水
+
+c工程实现 具体的代码 
+
+jni native ->jni ->.c 
+
+
+
+1. 当c代码接受到特定的消息 让c代码通知 java代码
+
+2. c程序员 c代码想复用java里面的函数和方法 
